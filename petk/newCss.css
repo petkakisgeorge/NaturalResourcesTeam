@@ -1,0 +1,55 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background-image: url("wind3.jpg");
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.menu-bar
+{
+    float: right;
+    background-color: #0b2e13;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li
+{
+    width: 100px;
+    margin: 15px;
+    padding: 10px;
+}
+.menu-bar ul li a
+{
+    float: right;
+    text-decoration: none;
+    text-align: right;
+    font-family: "Roboto",sans-serif;
+    color: #fff;
+    transition: 0.6s ease;
+    padding: 14px 16px;
+    font-size: 20px;
+}
+.active, .menu-bar ul li:hover
+{
+    background: #2bab0d;
+    border-radius: 5px;
+}
+.main {
+    padding: 16px;
+    margin-top: 50px;
+    height: 1500px; /* Used in this example to enable scrolling */
+}
