@@ -1,0 +1,24 @@
+.infos{
+    list-style-type: square;
+    margin: 0;
+    padding: 0;
+}
+
+.info1{
+    color: aliceblue;
+    text-align: left;
+}
+
+.barItems{
+    float: left;
+ 
+   height:200px;
+}
+.mainContent{
+    color: aliceblue;
+    text-emphasis: bold;
+    text-align: center;
+}
+
+
+
