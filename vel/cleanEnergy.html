@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This site deals with clean energy and aims to inform about better management of natural resources.">
+    <meta name="author" content="George Petkakis, Velisarios Fafoutis, George Giannios, Panos Papastergiou">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Energy Clean Future</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="cleanEnergy.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    
+    
+</head>
+
+<body>
+<div class="mainMenu" id="mainMenuBar">
+    <a class="active" id="logo" href="#home"><strong>Clean Energy Clean Future</strong></a>
+    
+    <a href="#naturalResources">Natural Resources</a> 
+    <a href="#technology">Technology</a>
+    <a href="#energy&Economy">Energy & Economy</a>
+    <a href="#news">News</a>
+    <a href="#forum">Forum</a>
+    
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("mainMenuBar");
+          if (x.className === "mainMenu" || x.className == "menu2") {
+            x.className += " responsive";
+          } else {
+            x.className = "mainMenu";
+          }
+        }
+        </script>
+        
+    
+    <div class="menu2">
+        <a href="#login">Log In</a>
+        <form class="search" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <h6> _</h6>
+
+    <div class="mainHeader">
+        <h1 class="title">Clean Energy</h1>
+        <h1 class="title">Clean Future</h1>
+    </div>
+
+    <h2 id="contentHeader">Energy sources</h2>
+
+
+    <div class="energyResourcesList">
+
+        <div class="photo">
+            <img class="images" src="images/solar2.jpg">
+            <div class="overlay">
+                <h2 class="text">Solar</h2>
+                <a class="text2" href="#solar"><strong>Learn more</strong> about solar energy</a>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img class="images" src="images/wind3.jpg">
+            <div class="overlay">
+                <h2 class="text">Wind</h2>
+                <a class="text2" href="#wind"><strong>Learn more</strong> about wind power</a>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img class="images" src="images/hydro1.jpg">
+            <div class="overlay">
+                <h2 class="text">Water</h2>
+                <a class="text2" href="#water"><strong>Learn more</strong> about water power</a>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img class="images" src="images/geo1.jpg">
+            <div class="overlay">
+                <h2 class="text">Geothermal</h2>
+                <a class="text2" href="#geothermal"><strong>Learn more</strong> about geothermal energy</a>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img class="images" src="images/nuc1.jpg">
+            <div class="overlay">
+                <h2 class="text">Nuclear</h2>
+                <a class="text2" href="#nuclear"><strong>Learn more</strong> about nuclear energy</a>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img class="images" src="images/bioenergy.jpg">
+            <div class="overlay">
+                <h2 class="text">Bioenergy</h2>
+                <a class="text2" href="#bioenergy"><strong>Learn more</strong> about bioenergy</a>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img class="images" src="images/fuel1.jpg">
+            <div class="overlay">
+                <h2 class="text">Chemical</h2>
+                <a class="text2" href="#chemical"><strong>Learn more</strong> about chemical energy</a>
+            </div>
+        </div>
+    </div>
+    <h6 id="space"> _ </h6>
+</div>
+
+
+<footer class="footer">
+
+
+</footer>
+
+
+
+
+</body>
+</html>
