@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, serif;
+    background-color: lightgrey;
+}
+
+header{
+    position: fixed;
+    background-color: white;
+    border-bottom: 4px solid darkslategray;
+    display: flex;
+    width: 100%;
+    margin:auto ;
+    height: 66px;
+    align-items: center;
+    z-index: 2;
+}
+.button-container, .logo-container, .nav-links, .login-and-search{
+    display: flex;
+}
+/*button flex*/
+.checkbtn {
+    display: none;
+    font-size: 30px;
+    color: darkslategray;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+
+/*logo flex*/
+.logo-container{
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    background:darkslategray no-repeat;
+    line-height: 67px;
+}
+/*menu flex*/
+nav{
+    flex:2;
+}
+.nav-links{
+    justify-content: flex-start;
+    list-style: none;
+}
+.nav-link{
+    color: black;
+    font-size: 20px;
+    margin:0 10px;
+    font-weight: bold;
+}
+/*log in and search flex*/
+.login-and-search{
+    flex:1;
+    justify-content: flex-start;
+}
+
+.log-in button{
+    background-color: darkslategray;
+    border: 3px solid darkslategray;
+    padding: 6px 18px;
+    border-radius: 80px;
+    color: white;
+    font-size: 16px;
+}
+.log-in button:hover{
+    opacity: 70%;
+}
+.searchBox button{
+    border: 3px solid darkslategray;
+    margin-left: 20px;
+    background-color: white;
+    padding: 6px 18px;
+    border-radius: 80px;
+    color: black;
+    font-size: 16px;
+}
+/*Tablet Mode*/
+@media screen and (max-width: 1373px){
+    .logo-container{
+        justify-content: flex-start;
+        flex: 1;
+        margin-left:20px;
+    }
+    nav{
+        flex:3.5;
+    }
+    .nav-links{
+        align-items: center;
+    }
+    .login-and-search{
+        justify-content: flex-end;
+        flex: 1;
+        margin-right: 20px;
+    }
+}
+/*Smaller Tablet Mode*/
+@media screen and (max-width: 1150px) {
+    .button-container{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+    .checkbtn {
+        display: contents;
+    }
+    nav{
+        display: none;
+    }
+    .logo-container{
+        flex: 2;
+        justify-content: center;
+    }
+    .login-and-search{
+        flex: 1;
+        justify-content: center;
+    }
+
+}
+/*Mobile Mode*/
+@media screen and (max-width: 850px) {
+    .button-container{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+    .checkbtn {
+        display: contents;
+    }
+    .logo-container{
+        flex: 3.5;
+        justify-content: center;
+    }
+    .login-and-search{
+        flex: 1;
+        justify-content: center;
+    }
+    .log-in{
+        display: none;
+    }
+}
+
+
