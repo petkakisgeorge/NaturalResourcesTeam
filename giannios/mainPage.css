@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, serif;
+    background-color: lightgrey;
+}
+
+/*create a flex header*/
+header{
+    position: fixed;
+    background-color: white;
+    border-bottom: 4px solid darkslategray;
+    display: flex;
+    width: 100%;
+    margin:auto ;
+    height: 66px;
+    align-items: center;
+    z-index: 2;
+}
+
+
+/*3 flex containers that are involved in flex header*/
+.logo-container, .nav-links, .login-and-search{
+    display: flex;
+}
+/*button configuration*/
+.checkbtn {
+    display: none;
+    font-size: 30px;
+    color: darkslategray;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+
+/*logo flex*/
+.logo-container{
+    flex: 1;
+    order: 1;
+    justify-content: flex-end;
+    align-items: center;
+    background:darkslategray no-repeat;
+    height: 100%;
+}
+/*menu flex*/
+nav{
+    flex:2;
+    order: 2;
+}
+.nav-links{
+    justify-content: flex-start;
+    list-style: none;
+}
+.nav-link{
+    color: black;
+    font-size: 20px;
+    margin:0 10px;
+    font-weight: bold;
+}
+/*log in and search flex*/
+.login-and-search{
+    flex:1;
+    order:3;
+    justify-content: flex-start;
+}
+
+.log-in button{
+    background-color: darkslategray;
+    border: 3px solid darkslategray;
+    padding: 6px 18px;
+    border-radius: 80px;
+    color: white;
+    font-size: 16px;
+}
+.log-in button:hover{
+    opacity: 70%;
+}
+.searchBox button{
+    border: 3px solid darkslategray;
+    margin-left: 20px;
+    background-color: white;
+    padding: 6px 18px;
+    border-radius: 80px;
+    color: black;
+    font-size: 16px;
+}
+
+
+/*Tablet Mode*/
+@media screen and (max-width: 1375px){
+    .logo-container{
+        justify-content: flex-start;
+        flex: 1;
+        margin-left:20px;
+        order: 1;
+    }
+    nav{
+        flex:3.5;
+        order: 2;
+    }
+    .nav-links{
+        align-items: center;
+    }
+    .login-and-search{
+        justify-content: flex-end;
+        flex: 1;
+        order: 3;
+        margin-right: 20px;
+    }
+}
+/*Smaller Tablet Mode*/
+@media screen and (max-width: 1155px) {
+    .button-container{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        order: 1;
+    }
+    .checkbtn {
+        display: block;
+    }
+
+    nav{
+        all:unset;
+    }
+    .nav-links{
+        all: unset;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        overflow: scroll;
+
+        width: 40%;
+        height: 95.9em;
+
+        top: 4.1em;
+        left: 0;
+        list-style:none ;
+        background: white;
+        transition:all .3s;
+    }
+
+    .nav-links li a{
+        all: unset;
+        display: block;
+        color: black;
+        padding: 10px 20px;
+        text-align: left;
+
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    nav a:hover,a.active{
+        color: darkslategray;
+    }
+    #check:checked ~ ul{
+
+
+    }
+
+
+
+    .logo-container{
+        flex: 2;
+        justify-content: center;
+        order:2;
+    }
+    .login-and-search{
+        flex: 1;
+        justify-content: center;
+        order:3;
+    }
+}
+/*Mobile Mode*/
+@media screen and (max-width: 860px) {
+    .button-container{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+    .checkbtn {
+        display: block;
+    }
+    .logo-container{
+        flex: 3.5;
+        justify-content: center;
+    }
+    .login-and-search{
+        flex: 1;
+        justify-content: center;
+    }
+    .log-in{
+        display: none;
+    }
+    .nav-links li a{
+        font-size: 16px;
+    }
+}
+
+
