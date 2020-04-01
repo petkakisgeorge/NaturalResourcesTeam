@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javasc.js"></script>
+</head>
+<body>
+ <div class="topnav" id="myTopnav">
+     <a href="page.html" class="active"><strong>Clean Energy<br>Clean Future</strong></a>
+     <a href="tech.html">Technology</a>
+  <a href="Energy.html">Energy & Economy</a>
+  <div class="dropdown">
+      <form action="News.html">
+    <button class="dropbtn">News
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Daily</a>
+      <a href="#">Old</a>
+    </div>
+      </form>
+  </div>
+     <div class="dropdown">
+         <form action="Forum.html">
+         <button class="dropbtn">Forum
+             <i class="fa fa-caret-down"></i>
+         </button>
+         <div class="dropdown-content">
+             <a href="#">Register</a>
+             <a href="#">Log In</a>
+         </div>
+         </form>
+     </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+ <div class="container">
+    <h6> _</h6>
+
+    <div class="mainHeader">
+        <h1 class="title">Clean Energy</h1>
+        <h1 class="title">Clean Future</h1>
+    </div>
+
+    <h2 id="contentHeader">Energy sources</h2>
+
+
+    <div class="energyResourcesList">
+
+        <div class="photo">
+            <img class="images" src="images/solar2.jpg">
+            <div class="overlay">
+                <h2 class="text">Solar</h2>
+                <a class="text2" href="#solar"><strong>Learn more</strong> about solar energy</a>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img class="images" src="images/wind3.jpg">
+            <div class="overlay">
+                <h2 class="text">Wind</h2>
+                <a class="text2" href="#wind"><strong>Learn more</strong> about wind power</a>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img class="images" src="images/hydro1.jpg">
+            <div class="overlay">
+                <h2 class="text">Water</h2>
+                <a class="text2" href="#water"><strong>Learn more</strong> about water power</a>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img class="images" src="images/geo1.jpg">
+            <div class="overlay">
+                <h2 class="text">Geothermal</h2>
+                <a class="text2" href="#geothermal"><strong>Learn more</strong> about geothermal energy</a>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img class="images" src="images/nuc1.jpg">
+            <div class="overlay">
+                <h2 class="text">Nuclear</h2>
+                <a class="text2" href="#nuclear"><strong>Learn more</strong> about nuclear energy</a>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img class="images" src="images/bioenergy.jpg">
+            <div class="overlay">
+                <h2 class="text">Bioenergy</h2>
+                <a class="text2" href="#bioenergy"><strong>Learn more</strong> about bioenergy</a>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img class="images" src="images/fuel1.jpg">
+            <div class="overlay">
+                <h2 class="text">Chemical</h2>
+                <a class="text2" href="#chemical"><strong>Learn more</strong> about chemical energy</a>
+            </div>
+        </div>
+    </div>
+    <h6 id="space"> _ </h6>
+</div>
+
+
+ <footer id="colophon" class="site-footer" role="contentinfo">
+     <div class="social-wrapper">
+         <ul>
+             <li>
+                 <a href="#" target="_blank">
+                     <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" alt="Twitter Logo" class="twitter-icon"></a>
+             </li>
+             <li>
+                 <a href="#" target="_blank">
+                     <img src="https://www.mchenryvillage.com/images/instagram-icon.png" alt="Instagram Logo" class="instagram-icon"></a>
+             </li>
+             <li>
+                 <a href="#" target="_blank">
+                     <img src="http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico" alt="Facebook Logo" class="facebook-icon"></a>
+             </li>
+             <li>
+                 <a href="#" target="_blank">
+                     <img src="http://icons.iconarchive.com/icons/marcus-roberto/google-play/256/Google-plus-icon.png" alt="Googleplus Logo" class="googleplus-icon"></a>
+             </li>
+             <li>
+                 <a href="#" target="_blank">
+                     <img src="https://lh3.googleusercontent.com/j_RwVcM9d47aBDW5DS1VkdxUYCkDUCB6wZglv4x-9SmsxO0VaFs7Csh-FmKRCWz9r_Ef=w170" alt="Youtube Logo" class="youtube-icon"></a>
+             </li>
+             <li>
+                 <a href="#" target="_blank">
+                     <img src="http://www.iconarchive.com/download/i94258/designbolts/vector-foursquare/Foursquare-2.ico" alt="Foursquare Logo" class="foursquare-icon"></a>
+             </li>
+         </ul>
+     </div>
+
+     <nav class="footer-nav" role="navigation">
+         <p>Copyright &copy; 2020-
+             <?php echo date("Y"); ?> Csd Team. All rights reserved.</p>
+     </nav>
+ </footer>
+</body>
+</html>
