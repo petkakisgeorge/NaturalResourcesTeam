@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="navBar.css">
+
     <title>Flexbox Dropdown Menu</title>
-
-
 
 
 
@@ -16,65 +15,60 @@
 
 </head>
 <body>
+<header>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
 
-
-<nav id="main-nav">
-    <ul>
-        <li class="logo-container">
-            <img src="" alt="CleanEnergyCleanFuture">
-        </li>
-
-        <li class="nav-item">
-            <a href="#">Home</a>
-        </li>
-        <li class="nav-item">
-            <a href="#">Technology</a>
-            <ul class="submenu">
-                <li>
-                    <a href="#">Sub link 1</a>
-                </li>
-                <li>
-                    <a href="#">Sub link 2</a>
-                </li>
-                <li>
-                    <a href="#">Sub Link 3</a>
-                </li>
-            </ul>
-        </li>
-        <li class="nav-item">
-            <a href="#">Energy & Economy</a>
-        </li>
-        <li class="nav-item">
-            <a href="#">News</a>
-            <ul class="submenu">
-                <li>
-                    <a href="#">Sub Link 1</a>
-                </li>
-                <li>
-                    <a href="#">Sub Link 2</a>
-                </li>
-            </ul>
-        </li>
-        <li class="nav-item">
-            <a href="#">Forum</a>
-            <ul class="submenu">
-                <li>
-                    <a href="#">Sub Link 1</a>
-                </li>
-                <li>
-                    <a href="#">Sub Link 2</a>
-                </li>
-            </ul>
-        </li>
-
-        <li class="menu-button">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-        </li>
-    </ul>
-</nav>
+    <img class="logo-container" src="" alt="CleanEnergyCleanFuture">
+    <nav id="main-nav">
+        <ul id="main-ul">
+            <li class="nav-item">
+                <a class="main-link-a" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="main-link-a" href="#">Technology</a>
+                <ul class="submenu">
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub link 1</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub link 2</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub link 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="main-link-a" href="#">Energy &<br>Economy</a>
+            </li>
+            <li class="nav-item">
+                <a class="main-link-a" href="#">News</a>
+                <ul class="submenu">
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub Link 1</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub Link 2</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="main-link-a" href="#">Forum</a>
+                <ul class="submenu">
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub Link 1</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub Link 2</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
 
 <section>
     <h1>Hi, welcome</h1>
