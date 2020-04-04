@@ -3,17 +3,56 @@
     background-color: #aaa;
     width: 100%;
     padding: 1.3em;
-    background-image: url("../mainPage/images/wind.jpg");
+    background-image: url("images/energy-1989341_1920-compressor.jpg");
     background-size: 100% 100%;
     height: 300px;
 }
 .sampleImage{
     background-color: #aaa;
+    background-image: url("images/light-bulb-1246043_1920.jpg");
     width: 100%;
     padding: 1.3em;
     background-size: 100% 100%;
     height: 200px;
 }
+
+.solarPanelsImage{
+    background-color: #aaa;
+    background-image: url("images/photovoltaic-2138992_1920.jpg");
+    width: 100%;
+    padding: 1.3em;
+    background-size: 100% 100%;
+    height: 200px;
+}
+
+.windTurbinesImage{
+    background-color: #aaa;
+    background-image: url("images/wind-turbine-2218460_1920.jpg");
+    width: 100%;
+    padding: 1.3em;
+    background-size: 100% 100%;
+    height: 200px;
+}
+
+.hydroelectricDamsImage{
+    background-color: #aaa;
+    background-image: url("images/hydro.jpg");
+    width: 100%;
+    padding: 1.3em;
+    background-size: 100% 100%;
+    height: 200px;
+}
+
+.nuclearPlantsImage{
+    background-color: #aaa;
+    background-image: url("images/industry-2663189_1920.jpg");
+    width: 100%;
+    padding: 1.3em;
+    background-size: 100% 100%;
+    height: 200px;
+}
+
+
 /*create a card*/
 .techCard{
     display: grid;

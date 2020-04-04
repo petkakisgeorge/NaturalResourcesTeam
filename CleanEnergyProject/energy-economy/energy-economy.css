@@ -3,12 +3,31 @@
     background-color: #aaa;
     width: 100%;
     padding: 1.3em;
-    background-image: url("../mainPage/images/solar.jpg");
+    background-image: url("images/money-Copy.jpg");
     background-size: 100% 100%;
     height: 300px;
 }
-.sampleImage{
+.image1{
     background-color: #aaa;
+    background-image: url("images/lamp-3489395_1920.jpg");
+    width: 100%;
+    padding: 1.3em;
+    background-size: 100% 100%;
+    height: 200px;
+}
+
+.image2{
+    background-color: #aaa;
+    background-image: url("images/stock-1863880_1920.jpg");
+    width: 100%;
+    padding: 1.3em;
+    background-size: 100% 100%;
+    height: 200px;
+}
+
+.image3{
+    background-color: #aaa;
+    background-image: url("images/coins-1726618_1920.jpg");
     width: 100%;
     padding: 1.3em;
     background-size: 100% 100%;
