@@ -2,8 +2,9 @@
 .site-footer {
     background-color: #838383;
     text-align: center;
-    margin: 10px 0;
-    padding: 10px 0;
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+
 }
 
 /*Social Media Icons*/
@@ -21,7 +22,7 @@
 .instagram-icon,
 .linkedin-icon,
 .youtube-icon{
-    margin-top: .625em;
+    margin-top: .6em;
     width: 40px;
     height: 40px;
     opacity: .6;
