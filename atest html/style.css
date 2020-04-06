@@ -128,7 +128,7 @@ body{
 
 .mainHeader {
   border: 2px solid grey;
-  background: url("images/banner.jpg");
+  background: url("../CleanEnergyProject/mainPage/images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
