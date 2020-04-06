@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, serif;
+}
+
+
+header{
+    display:grid;
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: 4em;
+    font-size: 20px;
+    position:fixed;
+    width:100%;
+    background: white;
+    box-shadow: 0 4px 10px #888888;
+}
+
+/*configuration of logo container*/
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #95999c;
+    width:15em;
+}
+
+/*configuration of nav container*/
+#main-nav {
+    display: flex;
+    background:white;
+}
+/*configuration of unordered list*/
+#main-nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+/*Configuration of nav-item's list*/
+.nav-item{
+    position: relative;
+    width: 6em;
+}
+
+.nav-item:hover .submenu > li {
+    display: block;
+}
+
+/*configuration of nav-links' containers*/
+.nav-item a {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    height: 100%;
+    padding:0 .5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.4s;
+}
+.sub-nav-item a {
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    height: 2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.4s;
+}
+.nav-item a:hover {
+    background: darkslategray;
+    color: white;
+    transition: 0.4s;
+}
+.sub-nav-item a:hover {
+    opacity:0.8;
+    background: darkslategray;
+    color: white;
+    transition: 0.4s;
+}
+
+/*Configuration of sub menu container*/
+.submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background:white;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+}
+
+
+/*Sub menu list*/
+.sub-nav-item {
+    display: none;
+    position: relative;
+    width: 100%;
+}
+
+/*Menu button configuration*/
+.checkbtn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 100%;
+
+    background: white;
+
+    color: darkslategray;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+.checkbtn:hover  {
+    opacity:0.8;
+    background:lightgrey;
+    transition: .4s;
+}
+
+/*search button configuration
+.searchbtn {
+    display: flex;
+    order:1;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 100%;
+
+    background: white;
+
+    color: darkslategray;
+    cursor: pointer;
+}
+#check2{
+    display: none;
+}
+.searchbtn:hover  {
+    opacity:0.8;
+    background:lightgrey;
+}*/
+
+.search-container{
+    display: flex;
+    position: relative;
+    order: 1;
+}
+
+#button-label{
+    color: darkslategray;
+    font-size: 25px;
+    height: 100%;
+    width: 3.3em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-label:hover {
+    opacity:0.8;
+    background:lightgrey;
+    transition: .4s;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#search-label{
+    display: none;
+    position: relative;
+    padding:0.4em 0.4em;
+}
+
+#txtInput{
+    font-size: 14px;
+    color: black;
+    padding-left: 0.7em;
+
+    border: 2px solid darkslategray;
+    border-radius: 12px;
+    height: 2.5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.4s;
+}
+
+
+
+
+
+/**/
+.arrow {
+    display: none;
+}
+
+
+/*Mobile Mode*/
+@media screen and (max-width: 990px){
+    header{
+        display:grid;
+        grid-template-columns: 4em 1fr auto;
+        grid-template-rows: 4em auto;
+    }
+    .checkbtn{
+        display: flex;
+    }
+    .searchbtn{
+
+    }
+    #check:checked ~ #main-nav{
+        display:flex;
+    }
+    #check:not(:checked) ~ #main-nav {
+        display:none;
+    }
+
+    /*arrow's configuration*/
+    .arrow {
+        display: flex;
+        color: black;
+        font-size: 16px;
+        margin-left: 2em;
+    }
+    .nav-item a:hover .arrow {
+        color: white;
+        transition: 0.4s;
+    }
+
+    /*configuration of logo container*/
+    .logo-container{
+        display: flex;
+        width:80%;
+        margin-right:auto;
+        margin-left:auto;
+    }
+
+    /*configuration of nav container*/
+    #main-nav {
+        display: flex;
+        position:fixed;
+        top:4em;
+        background:white;
+    }
+    #main-ul{
+        font-size: 18px;
+        padding-top: 3em;
+        height: 100vh;
+        width: 50vw;
+        background:white;
+        overflow:scroll;
+    }
+
+    /*configuration of unordered list*/
+    #main-nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Configuration of nav-item's list*/
+    .nav-item{
+        position: relative;
+        background: white;
+        border-bottom: 0.15em solid darkslategrey;
+        width:50vw;
+    }
+
+
+    .nav-item:hover .submenu > li {
+        display: block;
+    }
+
+    /*configuration of nav-links' containers*/
+    .nav-item a {
+        font-size: 18px;
+        font-weight: bold;
+        height: 3em;
+
+        display: flex;
+        justify-content: left;
+        padding-left:1em;
+    }
+    .sub-nav-item a {
+        font-size: 16px;
+        font-weight: normal;
+        height: 2em;
+
+        display: flex;
+        justify-content: center;
+        padding-right:1.5em;
+    }
+
+    /*Configuration of sub menu container*/
+    .submenu {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        background:lightgrey;
+        box-shadow: none;
+    }
+    /*Sub menu list*/
+    .sub-nav-item {
+        display: none;
+        position: relative;
+        width: 100%;
+        border-bottom: 0.1em solid darkslategrey;
+    }
+
+}
+@media screen and (max-width: 700px){
+    .logo-container{
+        width: 100%;
+    }
+    /*configuration of nav container*/
+    #main-ul {
+        width:100vw;
+    }
+    /*Configuration of nav-item's list*/
+    .nav-item{
+        width:100vw;
+    }
+}
