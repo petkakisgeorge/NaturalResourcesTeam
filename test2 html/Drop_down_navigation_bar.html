@@ -5,80 +5,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="navBar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="MainPage.css">
+    <script src="sd.js"></script>
     <title>Flexbox Dropdown Menu</title>
-
-
-
-
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
+<header>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
 
+    <img class="logo-container" src="" alt="CleanEnergyCleanFuture">
 
-<nav id="main-nav">
-    <ul>
-        <li class="logo-container">
-            <img src="" alt="CleanEnergyCleanFuture">
-        </li>
+    <div class="nav-item2">
+            <a href='#' onclick='return myFunction()'>
+                <i class="fa fa-search"></i>
+            </a>
+            <div class="submenu2">
+                    <form action="/action_page.php">
+                        <label id="mmm">
+                            <input id="txtInput" type="text" placeholder="Search an article" name="search">
+                        </label>
+                    </form>
+            </div>
+    </div>
 
-        <li class="nav-item">
-            <a href="#">Home</a>
-        </li>
-        <li class="nav-item">
-            <a href="#">Technology</a>
-            <ul class="submenu">
-                <li>
-                    <a href="#">Sub link 1</a>
-                </li>
-                <li>
-                    <a href="#">Sub link 2</a>
-                </li>
-                <li>
-                    <a href="#">Sub Link 3</a>
-                </li>
-            </ul>
-        </li>
-        <li class="nav-item">
-            <a href="#">Energy & Economy</a>
-        </li>
-        <li class="nav-item">
-            <a href="#">News</a>
-            <ul class="submenu">
-                <li>
-                    <a href="#">Sub Link 1</a>
-                </li>
-                <li>
-                    <a href="#">Sub Link 2</a>
-                </li>
-            </ul>
-        </li>
-        <li class="nav-item">
-            <a href="#">Forum</a>
-            <ul class="submenu">
-                <li>
-                    <a href="#">Sub Link 1</a>
-                </li>
-                <li>
-                    <a href="#">Sub Link 2</a>
-                </li>
-            </ul>
-        </li>
-
-        <li class="menu-button">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-        </li>
-    </ul>
-</nav>
-
-<section>
-    <h1>Hi, welcome</h1>
+    <nav id="main-nav">
+        <ul id="main-ul">
+            <li class="nav-item">
+                <a class="main-link-a" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="main-link-a" href="#">Technology<span class="arrow">&#x25BC;</span></a>
+                <ul class="submenu">
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub link 1</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub link 2</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub link 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="main-link-a" href="#">Energy &<br>Economy</a>
+            </li>
+            <li class="nav-item">
+                <a class="main-link-a" href="#">News<span class="arrow">&#x25BC;</span></a>
+                <ul class="submenu">
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub Link 1</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub Link 2</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="main-link-a" href="#">Forum<span class="arrow">&#x25BC;</span></a>
+                <ul class="submenu">
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub Link 1</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub Link 2</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section class="Main_Page">
+    <div class="row">
+        <h1>Natural Resources</h1>
+        <p><strong>Clean Energy - Clean Future</strong><br>
+            Most compellingly, a dramatic clean energy revolution is already under way,
+            ushering in the energy system of the future – one that is affordable, resilient,
+            reliable, integrated, and diversified, thanks to renewables like wind and solar.
+        </p>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Geothermal</h2>
+                <h5>Apr 6, 2020</h5>
+                <div class="img1" style="height:300px;"></div>
+                <p>Geothermal energy comes from deep inside the earth.<br>
+                    The slow decay of radioactive particles in the earth's core,<br>
+                    a process that happens in all rocks, produces geothermal energy.
+                </p>
+                <a class="hyperlink" href="geothermal.html"><strong>Read More</strong></a>
+            </div>
+            <div class="card">
+                <h2>Solar</h2>
+                <h5>Apr 6, 2020</h5>
+                <div class="img2" style="height:300px;"></div>
+                <p>Solar power is energy from the sun that is converted into thermal or electrical energy.<br>
+                    Solar energy is the cleanest and most abundant renewable energy source available</p>
+                <a class="hyperlink" href="solar.html"><strong>Read More</strong></a>
+            </div>
+            <div class="card">
+                <h2>Wind</h2>
+                <h5>Apr 6, 2020</h5>
+                <div class="img4" style="height:300px;"></div>
+                <p>The wind is a clean, free, and readily available renewable energy source.<br>
+                    Each day, around the world, wind turbines are capturing the wind’s power and converting it to
+                    electricity.<br>
+                    Wind power generation plays an increasingly important role in the way we power our world – in a
+                    clean, sustainable manner.
+                </p>
+                <a class="hyperlink" href="geothermal.html"><strong>Read More</strong></a>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>Join Us</h2>
+                <div class="img3" style="height:100px;"></div>
+                <p>Create an account to keep receiving all the new posts</p>
+            </div>
+            <div class="card">
+                <h3>Popular Post</h3>
+                <div class="other_img"><p>Image</p></div>
+                <div class="other_img"><p>Image</p></div>
+                <div class="other_img"><p>Image</p></div>
+            </div>
+            <div class="card">
+                <h3>Blog</h3>
+                <p>Some text..</p>
+            </div>
+            <div class="card">
+                <h3>Going down..</h3>
+                <p><br>We will see what we are going to put.<br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br></p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h1>Newsletter Or Something like this</h1>
+        <p><strong>End of the first page</strong><br>
+            Some text i guess.
+        </p>
+    </div>
 </section>
-</body>
+<footer class="site-footer">
+    <div class="social-wrapper">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" alt="Twitter Logo"
+                         class="twitter-icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://www.mchenryvillage.com/images/instagram-icon.png" alt="Instagram Logo"
+                         class="instagram-icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico"
+                         alt="Facebook Logo" class="facebook-icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://lh3.googleusercontent.com/j_RwVcM9d47aBDW5DS1VkdxUYCkDUCB6wZglv4x-9SmsxO0VaFs7Csh-FmKRCWz9r_Ef=w170"
+                         alt="Youtube Logo" class="youtube-icon"></a>
+            </li>
+        </ul>
+    </div>
 
+    <nav class="footer-nav">
+        <p>Copyright &copy; 2020
+            <?php echo date("Y"); ?> Csd Team. All rights reserved.</p>
+    </nav>
+</footer>
+
+</body>
 </html>
