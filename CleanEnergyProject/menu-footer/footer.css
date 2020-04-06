@@ -1,0 +1,42 @@
+/* Here starts the footer css*/
+.site-footer {
+    background-color: #838383;
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+
+}
+
+/*Social Media Icons*/
+.social-wrapper {
+    text-align: center;
+}
+
+.social-wrapper ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.twitter-icon,
+.facebook-icon,
+.instagram-icon,
+.linkedin-icon,
+.youtube-icon{
+    margin-top: .6em;
+    width: 40px;
+    height: 40px;
+    opacity: .6;
+    border-radius: 25px;
+}
+
+.twitter-icon:hover,
+.facebook-icon:hover,
+.instagram-icon:hover,
+.linkedin-icon:hover,
+.youtube-icon:hover{
+    opacity: 1.0;
+}
+
+.footer-nav p {
+    text-align: center;
+}
