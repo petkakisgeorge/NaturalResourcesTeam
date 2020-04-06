@@ -1,0 +1,152 @@
+.Main_Page
+{
+    display: grid;
+}
+h1{
+    margin-top: 5em;
+    text-align: center;
+}
+p{
+    font-style: italic;
+    text-align: center;
+}
+/*from here we change the color of the spaces left in row*/
+.row{
+    background-color: #f1f1f1;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+/*style of a href hyperlink*/
+.hyperlink
+{
+    display: flex;
+    justify-content: center;
+    color: #555555;
+}
+/* Geo image */
+.img1 {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    background-image: url("images/geo.jpg");
+    background-size: 150% 150%;
+}
+/* Solar image */
+.img2 {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    background-image: url("images/solar.jpg");
+    background-size: 100% 100%;
+}
+/* Wind image */
+.img4 {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    background-image: url("images/wind.jpg");
+    background-size: 100% 100%;
+}
+/* Water image */
+.img5 {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    background-image: url("images/hydro.jpg");
+    background-size: 100% 100%;
+}
+/* Nuclear image */
+.img6{
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    background-image: url("images/nuclear.jpg");
+    background-size: 100% 100%;
+}
+/* BioEnergy image */
+.img7{
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    background-image: url("images/bioenergy.jpg");
+    background-size: 100% 100%;
+}
+/* Chemical image */
+.img8{
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    background-image: url("images/fuel.jpg");
+    background-size: 100% 100%;
+}
+/* Register image */
+.img3 {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    background-image: url("images/registerLogo.jpg");
+    background-size: 100% 150%;
+}
+/*Others Images*/
+.other_img{
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns - maybe not needed */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*This is for smoother scrolling up*/
+html {
+    scroll-behavior: smooth;
+}
+/*Scroll to the top button configuration*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: forestgreen; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+/*Button Color when focus*/
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
