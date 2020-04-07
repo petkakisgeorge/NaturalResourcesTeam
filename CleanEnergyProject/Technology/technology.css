@@ -19,7 +19,7 @@ p{
 .row{
     
     padding-top: 5em;
-    background-image: url("CleanEnergyProject\Technology\TechImages\image\energy-1989341_1920-compressor.jpg");
+    background-image: url('image/energy-1989341_1920-compressor.jpg');
 }
 
 #title{
