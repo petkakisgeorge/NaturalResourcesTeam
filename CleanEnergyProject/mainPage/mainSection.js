@@ -1,5 +1,5 @@
 function scrollFunction() { //always in pixels
-    if (document.body.scrollTop > 2500 || document.documentElement.scrollTop > 2500) {
+    if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
         mybutton.style.display = "block";
     } else {
         mybutton.style.display = "none";

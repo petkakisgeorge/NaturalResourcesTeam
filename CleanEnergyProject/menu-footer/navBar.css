@@ -25,7 +25,7 @@ header{
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: #95999c;
+    background: darkslategray;
     width:15em;
 }
 
@@ -129,28 +129,7 @@ header{
     transition: .4s;
 }
 
-/*search button configuration
-.searchbtn {
-    display: flex;
-    order:1;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    height: 100%;
-
-    background: white;
-
-    color: darkslategray;
-    cursor: pointer;
-}
-#check2{
-    display: none;
-}
-.searchbtn:hover  {
-    opacity:0.8;
-    background:lightgrey;
-}*/
-
+/*search container configuration*/
 .search-container{
     display: flex;
     position: relative;
@@ -205,12 +184,11 @@ header{
 
 
 
-
-
 /**/
 .arrow {
     display: none;
 }
+
 
 
 /*Mobile Mode*/
