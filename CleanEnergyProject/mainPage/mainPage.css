@@ -37,7 +37,10 @@ p{
     text-decoration: none;
     color: black;
 }
-
+.link:hover{
+    color: darkslategray;
+    transition: .3s;
+}
 /*style of a href hyperlink*/
 .hyperlink {
     display: flex;
@@ -126,6 +129,11 @@ p{
     background-image: url("images/registerLogo.jpg");
     background-size: 100% 150%;
     height: 100px;
+    cursor: pointer;
+}
+.img3:hover{
+    border:4px solid rgba(47,79,79,0.7);
+    transition: 0.3s;
 }
 /*Others Images*/
 .other_img{
