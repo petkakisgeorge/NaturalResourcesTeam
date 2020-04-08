@@ -8,35 +8,173 @@ h1{
     text-align: center;
     
 }
+
+
 p{
     font-style: italic;
     text-align: center;
 }
 
 
+.mainContent{
+    background-color: white;
+    margin-left:3%;
+    margin-right: 3%;
+    margin-top: 5%;
+    margin-bottom: -10%;
+    display: grid; 
+    grid-template-columns: 20% auto;
+    grid-template-rows:30% 70% 30%;
+    grid-template-areas:
+    "mainContenTitle mainContentTitle"
+    "imgContainer mainText" ;
+}
+
+.mainContentTitle{
+    grid-area: mainContentTitle;
+    margin-top: 1%;
+    text-align: center;
+    margin-right: 25%;
+    text-decoration: underline;
+}
+
+.mainText{
+    grid-area: mainText;
+    text-align: right;
+    text-align: justify;
+    margin-left: 5%;
+    padding-right: 2%;
+    font-size: 130%;
+}
+
+.bottomContent{
+    
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    grid-template-rows:30% 70%;
+    grid-template-areas:
+    "card card card"
+    "registerCard popularPostCard newsCard" ;
+
+    background-color: white;
+    margin-left:3%;
+    margin-right: 3%;
+    margin-top: 5%;
+
+}
+
+
+.card {
+    grid-area:card;
+    background-color: #aaa;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.registerCard {
+    grid-area:registerCard;
+    background-color: #aaa;
+    padding: 20px;
+    padding-right: 20%;
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 10%;
+}
+
+.popularPostCard{
+    grid-area:popularPostCard;
+    background-color: #aaa;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.newsCard{
+    grid-area:newsCard;
+    background-color: #aaa;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
 
 /*from here we change the color of the spaces left in row*/
 .row{
-    
     padding-top: 5em;
-    background-image: url('image/energy-1989341_1920-compressor.jpg');
+    padding-bottom: 5em;
+    font-size: large;
 }
 
-#title{
-    font-size: 5vm;
+.imageTitle{
+    background-image: url('image/energy-1989341_1920-compressor.jpg');
+    background-position: center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 100%;
+    
+}
+
+.mainSection{
+    background-color: #f1f1f1;
+
+}
+.img1Container{
+    grid-area: imgContainer;
+    width: 100%;
+    height:250px;
+    margin-left: 10%;
+    margin-bottom: 70% ;
+    border: 2px solid black;
+    
+    background-image: url('image/solar-cell-4045029_1920.jpg');
+    background-size: cover;
+}
+
+.border{
+    margin-top: 10%;
+    background-color: white;
+    border: hidden;
+    border-bottom: 1px solid black;
+ 
+   
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*Others Images*/
+.other_img{
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Register image */
+.img3 {
+    background-color: #aaa;
+    width: 70%;
+    height: 70%;
+
+    padding: 20px;
+    background-image: url("image/registerLogo.jpg");
+    background-size: 100% 150%;
 }
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {
     float: left;
-    width: 75%;
+    width: 10%;
+    
 }
 /* Right column */
 .rightcolumn {
     float: left;
     width: 25%;
-    padding-left: 20px;
+    padding-left: 53px;
 }
 /*style of a href hyperlink*/
 .hyperlink
@@ -47,11 +185,7 @@ p{
 }
 
 /* Add a card effect for articles */
-.card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-}
+
 
 /* Clear floats after the columns - maybe not needed */
 .row:after {
