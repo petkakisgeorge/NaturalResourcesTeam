@@ -162,7 +162,6 @@ header{
     justify-content: center;
     align-items: center;
     background-color: rgba(242,242,242,1);
-    z-index: 99;
 }
 #search-label{
     display: none;
@@ -206,6 +205,9 @@ header{
     }
     #search-label{
         width: 70vw;
+    }
+    .text-container{
+        z-index: 99;
     }
     #check:checked ~ #main-nav{
         display:flex;
@@ -313,11 +315,11 @@ header{
     }
     /*configuration of nav container*/
     #main-ul {
-        width:100vw;
+        width:60vw;
     }
     /*Configuration of nav-item's list*/
     .nav-item{
-        width:100vw;
+        width:60vw;
     }
     #search-label{
         width: 95vw;
