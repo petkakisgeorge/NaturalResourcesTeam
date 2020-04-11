@@ -61,16 +61,16 @@ p{
 .bottomContent{
     
     display: grid; 
-    grid-template-columns: auto auto auto;
-    grid-template-rows:30% 70%;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows:100%;
     grid-template-areas:
-    "card card card"
-    "registerCard popularPostCard newsCard" ;
+    "registerCard card popularPostCard newsCard" ;
 
     background-color: white;
     margin-left:3%;
-    margin-right: 3%;
+    margin-right: 5.9%;
     margin-top: 5%;
+    padding-bottom: -5%;
 
 }
 
@@ -79,21 +79,23 @@ p{
     grid-area:card;
     background-color: #aaa;
     padding: 20px;
+
     margin-top: 20px;
     margin-right: 5%;
-    margin-left: 5%;
-    
+    margin-left: -170%;
+   
 }
 
 .registerCard {
     grid-area:registerCard;
     background-color: #aaa;
     padding: 20px;
-    padding-right: 20%;
+    
     margin-top: 20px;
-    margin-right: 5%;
-    margin-left: 9.3%;
+    margin-right: -10%;
+    margin-left: 20%;
     width:50%;
+    
 }
 
 .popularPostCard{
@@ -110,8 +112,14 @@ p{
     background-color: #aaa;
     padding: 20px;
     margin-top: 20px;
-    margin-right: 19%;
+    margin-right: 20%;
     margin-left: 5%;
+}
+
+.newsLetter{
+    margin-bottom: 2%;
+    
+    font-size: large;
 }
 
 /*from here we change the color of the spaces left in row*/
@@ -138,7 +146,7 @@ p{
 .imgContainer{
     grid-area: imgContainer;
     width: 80%;
-    height:80%;
+    height:100%;
     margin-left: 20%;
     margin-bottom: 70%;
     border: 2px solid black;
@@ -153,10 +161,46 @@ p{
     background-color: white;
     border: hidden;
     border-bottom: 1px solid black;
- 
-   
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.previousAndNextButtons{
+     
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2%;
+    margin-top: 5%;
+   
+
+}
+#next{
+   
+   
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+
+}
+
+#next:hover{
+    background-color: #aaa;
+}
+
+#previous{
+    
+  
+    text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  margin-right: 1%;
+}
+
+#previous:hover{
+    background-color: #aaa;
+   
 }
 
 /*Others Images*/
@@ -169,7 +213,7 @@ p{
 /* Register image */
 .img3 {
     background-color: #aaa;
-    width: 70%;
+    width: 100%;
     height: 70%;
 
     padding: 20px;
@@ -239,8 +283,7 @@ html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-      
-}
+    }
     
     
     .mainContentTitle{
@@ -273,53 +316,54 @@ html {
         margin-top: -60%;
     }
     
-    .bottomContent{
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+.bottomContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
-    }
+        
+}
 
     
 .card {
-    grid-area:card;
     background-color: #aaa;
     padding: 20px;
     margin-top: 20px;
     width: 80%;
+    margin-left: 8%;
 }
 
 .registerCard {
-    grid-area:registerCard;
+  
     background-color: #aaa;
-    height: 200px;
     margin-top: 20px;
-    width: 80%;
-    margin-right: 9%;
+    width: 50%;
+    height: 80%;
+    margin-right: 20%;
 }
 
 .popularPostCard{
-    grid-area:popularPostCard;
+    
     background-color: #aaa;
     margin-top: 20px;
     width: 80%;
+    margin-left: 7%;
 }
 
 .newTechCard{
-    grid-area:newsCard;
+   
     background-color: #aaa;
     margin-top: 20px;
-    width:80%;
-    margin-left:19%;
+    width:50%;
+    margin-left:23%;
 }
 
 /* Register image */
 .img3 {
     background-color: #aaa;
-    width: 70%;
-    height: 50%;
+   
+    height: 200px;
     padding: 20px;
     background-image: url("image/registerLogo.jpg");
     background-size: contain;
@@ -332,4 +376,6 @@ html {
     text-align: left;
     margin-top: 5%;
 }
+
+
 }
