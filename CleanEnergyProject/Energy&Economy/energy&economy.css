@@ -200,7 +200,7 @@ p{
 }
 
 #next:hover{
-    background-color: #aaa;
+    text-decoration: underline;
 }
 
 #previous{
@@ -213,7 +213,7 @@ p{
 }
 
 #previous:hover{
-    background-color: #aaa;
+    text-decoration: underline;
    
 }
 
