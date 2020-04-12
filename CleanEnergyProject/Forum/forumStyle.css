@@ -13,12 +13,13 @@ header{
 
 #jumboTop {
     padding-top: 150px ;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     background-color: darkslategray;
     color: white;
     font-family: Arial, serif;
 
 }
+
 
 
 #forumThreads .btn-primary{
