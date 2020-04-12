@@ -1,11 +1,13 @@
-.Main_Page
-{
+.Main_Page{
     display: grid;
+    background: rgba(104,255,87,0.33)
 }
+
 h1{
-    margin-top: 5em;
+    margin-top: 4em;
     text-align: center;
 }
+
 p{
     font-style: italic;
     text-align: center;
@@ -13,90 +15,125 @@ p{
 /*from here we change the color of the spaces left in row*/
 .row{
     background-color: #f1f1f1;
+    width: 78%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {
+.leftColumn {
     float: left;
     width: 75%;
 }
 /* Right column */
-.rightcolumn {
+.rightColumn {
     float: left;
     width: 25%;
-    padding-left: 20px;
+    padding-left: 1.3em;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    color: darkslategray;
+    transition: .3s;
 }
 /*style of a href hyperlink*/
-.hyperlink
-{
+.hyperlink {
     display: flex;
     justify-content: center;
     color: #555555;
+    font-weight: bold;
+}
+
+/*Banner image*/
+.img0 {
+    background-color: #aaa;
+    width: 100%;
+    padding: 1.3em;
+    background-image: url("images/mainBanner.jpg");
+    background-size: 100% 100%;
+    height: 400px;
 }
 /* Geo image */
 .img1 {
     background-color: #aaa;
     width: 100%;
-    padding: 20px;
+    padding: 1.3em;
     background-image: url("images/geo.jpg");
     background-size: 150% 150%;
+    height: 300px;
 }
 /* Solar image */
 .img2 {
     background-color: #aaa;
     width: 100%;
-    padding: 20px;
+    padding: 1.3em;
     background-image: url("images/solar.jpg");
     background-size: 100% 100%;
+    height: 300px;
 }
 /* Wind image */
 .img4 {
     background-color: #aaa;
     width: 100%;
-    padding: 20px;
+    padding: 1.3em;
     background-image: url("images/wind.jpg");
     background-size: 100% 100%;
+    height: 300px;
 }
 /* Water image */
 .img5 {
     background-color: #aaa;
     width: 100%;
-    padding: 20px;
+    padding: 1.3em;
     background-image: url("images/hydro.jpg");
     background-size: 100% 100%;
+    height: 300px;
 }
 /* Nuclear image */
 .img6{
     background-color: #aaa;
     width: 100%;
-    padding: 20px;
+    padding: 1.3em;
     background-image: url("images/nuclear.jpg");
     background-size: 100% 100%;
+    height: 300px;
 }
 /* BioEnergy image */
 .img7{
     background-color: #aaa;
     width: 100%;
-    padding: 20px;
+    padding: 1.3em;
     background-image: url("images/bioenergy.jpg");
     background-size: 100% 100%;
+    height: 300px;
 }
 /* Chemical image */
 .img8{
     background-color: #aaa;
     width: 100%;
-    padding: 20px;
+    padding: 1.3em;
     background-image: url("images/fuel.jpg");
     background-size: 100% 100%;
+    height: 300px;
 }
 /* Register image */
 .img3 {
     background-color: #aaa;
     width: 100%;
-    padding: 20px;
+    padding: 1.3em;
     background-image: url("images/registerLogo.jpg");
     background-size: 100% 150%;
+    height: 100px;
+    cursor: pointer;
+}
+.img3:hover{
+    border:4px solid rgba(47,79,79,0.7);
+    transition: 0.3s;
 }
 /*Others Images*/
 .other_img{
@@ -109,6 +146,15 @@ p{
 .card {
     background-color: white;
     padding: 20px;
+    margin-top: 20px;
+}
+#topicCard{
+    background: white;
+    border-bottom: 0.2em solid rgba(47,79,79,0.7);
+    border-top: 0.2em solid rgba(47,79,79,0.7);
+    color: darkslategray;
+    text-align: center;
+    padding: 10px;
     margin-top: 20px;
 }
 
@@ -126,15 +172,15 @@ html {
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
+    bottom: 1.3em; /* Place the button at the bottom of the page */
+    right: 2em; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: forestgreen; /* Set a background color */
+    background-color: darkslategray; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    padding: 0.9em; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
 }
@@ -144,9 +190,63 @@ html {
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {
+@media screen and (max-width: 1500px) {
+    .row{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .row{
+        width:95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .row{
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .leftColumn, .rightColumn {
         width: 100%;
         padding: 0;
     }
+    .rightColumn{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        column-gap: 20px;
+    }
+    .img0{
+        height: 350px;
+    }
+    .img1,.img2,.img4,.img5,.img6,.img7,.img8{
+        height: 280px;
+    }
+
+    #joinCard{
+        width: 100%;
+        order: 1;
+    }
+    #postCard{
+        width: 100%;
+        order: 2;
+    }
+    #blogCard{
+        width: 100%;
+        order:3;
+        grid-row: 2;
+        grid-column: 1/3;
+    }
+    #downCard{
+        order:5;
+        grid-row: 3;
+        grid-column: 1/3;
+    }
+
 }

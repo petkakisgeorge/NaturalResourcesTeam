@@ -1,0 +1,211 @@
+.Main_Page{
+    display: grid;
+    background: rgba(104,255,87,0.33)
+}
+.row
+{
+    display: grid;
+}
+/* h1 style ("Register")*/
+h1
+{
+    margin-top: 0.8em;
+    margin-left: 1.2em;
+    margin-bottom: 0.5em;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 45px;
+    letter-spacing: -0.2px;
+    word-spacing: -1.4px;
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: oblique;
+    font-variant: small-caps;
+    text-transform: none;
+}
+/* Arrow Creation and animation*/
+.arrow-down{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    justify-self: right;
+    margin-right: 12em;
+    margin-top: -4em;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: bounceArrow 2s infinite;
+    animation: bounceArrow 2s infinite;
+    box-sizing: border-box;
+}
+/* Smoothly up and down the arrow animation*/
+@keyframes  bounceArrow{
+    0%{top: 0px;}
+    50%{top: 20px;}
+    100%{top: 0px;}
+}
+/* Removes forced red color of incorrect box at input fields for other browsers  */
+input {
+    box-shadow:none;
+}
+/* Removes forced red color of incorrect box at input fields for mozilla  */
+input:-moz-placeholder {
+    box-shadow:none !important;
+}
+/* Register Box size and other settings */
+.RegisterBox{
+    margin-top: 6em;
+    width: 45%;
+    height: 600px;
+    background: #000;
+    color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+}
+/* Register paragraphs style. Ex: Username, Password etc */
+.RegisterBox p{
+
+    font-weight: bold;
+    margin-left: 4em;
+}
+/* General settings for all kind of inputs*/
+.RegisterBox input{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-bottom: 20px;
+    display: grid;
+}
+/* Special settings about style of every input with type "text" or "password"*/
+.RegisterBox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+/* Special settings about style of input type"submit" which works like a submit button*/
+.RegisterBox input[type="submit"]
+{
+    margin-top: 1em;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: forestgreen;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+/* Submits' input hover when we touch it with the mouse */
+.RegisterBox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: grey;
+    color: #000;
+}
+/* Style of a1  ("Terms&Privacy") */
+.RegisterBox #a1{
+    color: darkgreen;
+}
+/* Style of a2  ("Already have an account?")*/
+.RegisterBox #a2{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    color: darkgrey;
+    margin-left: 2em;
+}
+.RegisterBox #a2:hover
+{
+    color: darkgreen;
+}
+
+@media screen and (max-width: 1100px) {
+    .RegisterBox{
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 990px) {
+    .arrow-down{
+        margin-right: 7em;
+    }
+}
+@media screen and (max-width: 700px) {
+    .RegisterBox{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .RegisterBox p{
+        margin-left: 3em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
