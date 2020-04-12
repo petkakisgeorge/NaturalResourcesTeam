@@ -2,33 +2,33 @@
     display: grid;
     background: #f1f1f1;
 }
+
 #mainTitle{
     margin-top: 4em;
     text-align: center;
 }
+
 .mainLinkTitle{
     text-decoration: none;
     color: black;
 }
-/*from here we change the color of the spaces left in row*/
-.row{
-    background-color: #f1f1f1;
-    width: 78%;
-    margin-right: auto;
-    margin-left: auto;
-}
-/* Add a card effect for articles */
-.card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-}
 /*Banner image*/
-.img0 {
+.solarImg0 {
     background-color: #aaa;
     width: 100%;
     padding: 1.3em;
     background-image: url("../mainPage/images/solar.jpg");
     background-size: 100% 100%;
     height: 400px;
+}
+/*from here we change the color of the spaces left in row*/
+.seeMoreRow{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    background-color: #f1f1f1;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }

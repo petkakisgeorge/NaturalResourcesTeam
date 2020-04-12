@@ -1,0 +1,13 @@
+#hydroPage{
+    display: grid;
+    background: #f1f1f1;
+}
+/*Banner image*/
+.hydroImg0 {
+    background-color: #aaa;
+    width: 100%;
+    padding: 1.3em;
+    background-image: url("../mainPage/images/hydro.jpg");
+    background-size: 100% 100%;
+    height: 400px;
+}
