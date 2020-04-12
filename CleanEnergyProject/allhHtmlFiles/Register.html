@@ -7,12 +7,12 @@
 
     <link rel="stylesheet" href="../menu-footer/navBar.css">
     <link rel="stylesheet" href="../menu-footer/footer.css">
-    <link rel="stylesheet" href="../natResPages/solar.css">
+    <link rel="stylesheet" href="../Register&Login/Register.css">
 
-    <title>Solar Energy</title>
+    <title>Main Page</title>
 
     <script src="../menu-footer/navBar.js"></script>
-    <script src="../mainPage/mainSection.js"></script>
+    <script src="../Register&Login/Register.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
@@ -77,10 +77,10 @@
                 <a class="main-link-a" href="#">Forum<span class="arrow">&#x25BC;</span></a>
                 <ul class="submenu">
                     <li class="sub-nav-item">
-                        <a class="sub-link-a" href="#">Log in</a>
+                        <a class="sub-link-a" href="Login.html">Log in</a>
                     </li>
                     <li class="sub-nav-item">
-                        <a class="sub-link-a" href="#">Register</a>
+                        <a class="sub-link-a" href="Register.html">Register</a>
                     </li>
                 </ul>
             </li>
@@ -88,23 +88,34 @@
     </nav>
 </header>
 
-
-
-
-<section>
-    <h1>Solar Energy</h1>
-    <h1>Solar Energy</h1>
-    <h1>Solar Energy</h1>
-    <h1>Solar Energy</h1>
-    <h1>Solar Energy</h1>
-    <h1>Solar Energy</h1>
+<section class="Main_Page">
+    <div class="RegisterBox">
+        <h1>Register</h1>
+        <div class="arrow-down"></div>
+        <form action="/action_page.php">
+            <p>Email</p>
+            <input type="text" id="email" name="" placeholder="Enter Email"
+                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="example@email.domain" required>
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username"
+                   pattern="[^' ']+"
+                   title="No spaces allowed" required >
+            <p>Password</p>
+            <input type="password" id="password" name="" placeholder="Enter Password"
+                   pattern="(?=.*[^' ']+)(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                   title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            <p>Repeat Password</p>
+            <input type="password" id="password_confirm" name="" placeholder="Repeat Password"
+                   pattern="(?=.*[^' ']+)(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                   title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required
+                   oninput="check(this)">
+            <p>By creating an account you agree to our <a id="a1" href="Terms&Privacy.html">Terms & Privacy</a>.</p>
+            <input type="submit" name="" value="Register">
+            <a id="a2" href="Login.html">Already have an account?</a>
+        </form>
+    </div>
 </section>
-
-
-
-
-
-
 
 <footer class="site-footer">
     <div class="social-wrapper">
@@ -132,5 +143,6 @@
             <?php echo date("Y"); ?> Csd Team. All rights reserved.</p>
     </nav>
 </footer>
+
 </body>
 </html>

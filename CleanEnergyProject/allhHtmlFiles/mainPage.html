@@ -77,10 +77,10 @@
                 <a class="main-link-a" href="#">Forum<span class="arrow">&#x25BC;</span></a>
                 <ul class="submenu">
                     <li class="sub-nav-item">
-                        <a class="sub-link-a" href="#">Log in</a>
+                        <a class="sub-link-a" href="Login.html">Log in</a>
                     </li>
                     <li class="sub-nav-item">
-                        <a class="sub-link-a" href="#">Register</a>
+                        <a class="sub-link-a" href="Register.html">Register</a>
                     </li>
                 </ul>
             </li>
@@ -88,13 +88,16 @@
     </nav>
 </header>
 
-
-
-
 <section class="Main_Page">
     <div class="row">
         <div class="card">
-            <h1><a class="link" href="mainPage.html">Clean energy  Clean Future</a></h1>
+            <h1><a class="link" href="mainPage.html" id="demo"></a></h1>
+            <script>
+                var i = 0;
+                var txt = 'Clean energy  Clean Future';
+                var speed = 60;
+                typeWriter();
+            </script>
             <div class="img0"></div>
             <p><strong>Clean Energy - Clean Future</strong><br>
                 Most compellingly, a dramatic clean energy revolution is already under way,
@@ -177,7 +180,7 @@
         <div class="rightColumn">
             <div class="card" id="joinCard">
                 <h2>Join Us</h2>
-                <button class="img3"></button>
+                <button class="img3" onclick="window.location.href = 'Register.html';"></button>
                 <p>Create an account to keep receiving all the new posts</p>
             </div>
             <div class="card" id="postCard">

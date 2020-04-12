@@ -1,0 +1,111 @@
+.Main_Page{
+    display: grid;
+    background: rgba(104,255,87,0.33)
+}
+/* h1 style and animation ("Recover your password")*/
+h1{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+   text-align: center;
+    animation: anime 2.5s ease-in-out;
+    -webkit-animation: anime 2.5s ease-in-out;
+}
+/* Smoothly show the h1 animation*/
+@keyframes  anime{
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+/* Removes forced red color of incorrect box at input fields for other browsers  */
+input {
+    box-shadow:none;
+}
+/* Removes forced red color of incorrect box at input fields for mozilla  */
+input:-moz-placeholder {
+    box-shadow:none !important;
+}
+/* Recover Box size and other settings */
+.RecoverBox{
+    margin-top: 6em;
+    width: 45%;
+    height: 400px;
+    background: #000;
+    color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+}
+/* Login paragraphs style. Ex: Email */
+.RecoverBox p{
+    margin-top: -1em;
+    font-weight: bold;
+    margin-left: 4em;
+}
+/* General settings for all kind of inputs*/
+.RecoverBox input{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-bottom: 20px;
+    display: grid;
+}
+/* Special settings about style of every input with type "text"*/
+.RecoverBox input[type="text"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+/* Special settings about style of input type"submit" which works like a submit button*/
+.RecoverBox input[type="submit"]
+{
+    margin-top: 1em;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: forestgreen;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+/* Submits' input hover when we touch it with the mouse */
+.RecoverBox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: grey;
+    color: #000;
+}
+/* Style of a. ex: Already have an account? ..etc*/
+.RecoverBox a{
+    margin-left: 2em;
+    color: darkgrey;
+}
+.RecoverBox a:hover
+{
+    color: darkgreen;
+}
+
+@media screen and (max-width: 1100px) {
+    .RecoverBox{
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 700px) {
+    .RecoverBox{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
