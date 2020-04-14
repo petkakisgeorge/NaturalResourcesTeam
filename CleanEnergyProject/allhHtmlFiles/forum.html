@@ -7,18 +7,20 @@
 
     <link rel="stylesheet" href="../menu-footer/navBar.css">
     <link rel="stylesheet" href="../menu-footer/footer.css">
-    <link rel="stylesheet" href="../Register&Login/Recover.css">
+    <link rel="stylesheet" href="../forum/forum.css">
+    <link rel="stylesheet" href="../mainPage/mainPage.css">
 
-    <title>Recover</title>
+    <title>Forum</title>
+
     <script src="../menu-footer/navBar.js"></script>
-    <script src="../Register&Login/Recover.js"></script>
-
+    <script src="../mainPage/mainSection.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
 <header>
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
@@ -43,6 +45,7 @@
             </label>
         </form>
     </div>
+
 
     <nav id="main-nav">
         <ul id="main-ul">
@@ -81,20 +84,77 @@
     </nav>
 </header>
 
-<section class="Main_Page">
-    <div class="RecoverBox">
-        <div class="avatar"></div>
-        <h1>Recover your password</h1>
-        <form>
-            <p>Email</p>
-            <input type="text" id="email" placeholder="Enter your email" name="usrname"
-                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                   title="example@email.domain" required >
-            <input type="submit" name="" onclick="SentAlert()" value="Send">
-            <a href="Login.html">Already have an account?</a>
-        </form>
+<section id="forumPage">
+    <div class="row" id="jumboTop">
+        <h1>Welcome to our Forum!</h1>
+        <p>Any questions?</p>
+        <div id="forum-buttons">
+            <button>New thread</button>
+            <button>Search thread</button>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div id="topicCard">
+            <h2>Posts</h2>
+        </div>
+    </div>
+
+
+    <div class="forumRow">
+        <div class="card">
+            <h3>Thread 1</h3>
+            <p>With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Go to Thread</a>
+        </div>
+        <div class="card" >
+            <h3>Thread 2</h3>
+            <p>With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Go to Thread</a>
+        </div>
+        <div class="card">
+            <h3>Thread 3</h3>
+            <p>With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Go to Thread</a>
+        </div>
+        <div class="card">
+            <h3>Thread 4</h3>
+            <p>With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Go to Thread</a>
+        </div>
+        <div class="card">
+            <h3>Thread 5</h3>
+            <p>With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Go to Thread</a>
+        </div>
+        <div class="card">
+            <h3>Thread 6</h3>
+            <p>With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Go to Thread</a>
+        </div>
+        <div class="card">
+            <h3>Thread 7</h3>
+            <p>With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Go to Thread</a>
+        </div>
+        <div class="card">
+            <h3>Thread 8</h3>
+            <p>With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Go to Thread</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <h1>Newsletter Or Something like this</h1>
+        <p><strong>End of the first page</strong><br>
+            Some text i guess.
+        </p>
     </div>
 </section>
+
+
+
 
 <footer class="site-footer">
     <div class="social-wrapper">
