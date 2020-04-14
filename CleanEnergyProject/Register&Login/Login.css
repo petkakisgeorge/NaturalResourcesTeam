@@ -2,10 +2,6 @@
     display: grid;
     background: #f1f1f1;
 }
-.row
-{
-    display: grid;
-}
 /* Login Box size and other settings */
 .LoginBox{
     margin-top: 8em;
