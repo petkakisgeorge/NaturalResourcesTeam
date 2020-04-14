@@ -9,5 +9,5 @@ function hide() {
 }
 function show() {
     document.getElementsByTagName('h2')[0].style.color = 'white';
-    setTimeout(hide,5000);
+    setTimeout(hide,10000);
 }

@@ -33,15 +33,17 @@
                 <i class="fa fa-search"></i>
             </a>
 
-            <div class="text-container">
-                <form action="#">
-                    <label id="search-label">
-                        <input id="txtInput" type="text" placeholder="Search..." name="search">
-                    </label>
-                </form>
-            </div>
         </div>
     </div>
+
+    <div class="text-container">
+        <form action="#">
+            <label id="search-label">
+                <input id="txtInput" type="text" placeholder="Search..." name="search">
+            </label>
+        </form>
+    </div>
+
 
     <nav id="main-nav">
         <ul id="main-ul">
@@ -49,32 +51,24 @@
                 <a class="main-link-a" href="mainPage.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="main-link-a" href="#">Technology<span class="arrow">&#x25BC;</span></a>
+                <a class="main-link-a" href="technology.html">Technology<span class="arrow">&#x25BC;</span></a>
                 <ul class="submenu">
                     <li class="sub-nav-item">
-                        <a class="sub-link-a" href="#">Sub link 1</a>
+                        <a class="sub-link-a" href="technology.html#tech1" onclick="PageScroll()">Technology's Role</a>
                     </li>
                     <li class="sub-nav-item">
-                        <a class="sub-link-a" href="#">Sub link 2</a>
+                        <a class="sub-link-a" href="technology.html#tech2" onclick="PageScroll()">Technological Innovations</a>
                     </li>
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="main-link-a" href="#">Energy &<br>Economy</a>
+                <a class="main-link-a" href="energy-economy.html">Energy &<br>Economy</a>
             </li>
             <li class="nav-item">
-                <a class="main-link-a" href="#">News<span class="arrow">&#x25BC;</span></a>
-                <ul class="submenu">
-                    <li class="sub-nav-item">
-                        <a class="sub-link-a" href="#">Sub Link 1</a>
-                    </li>
-                    <li class="sub-nav-item">
-                        <a class="sub-link-a" href="#">Sub Link 2</a>
-                    </li>
-                </ul>
+                <a class="main-link-a" href="#">News</a>
             </li>
             <li class="nav-item">
-                <a class="main-link-a" href="#">Forum<span class="arrow">&#x25BC;</span></a>
+                <a class="main-link-a" href="forum.html">Forum<span class="arrow">&#x25BC;</span></a>
                 <ul class="submenu">
                     <li class="sub-nav-item">
                         <a class="sub-link-a" href="Login.html">Log in</a>
@@ -88,17 +82,17 @@
     </nav>
 </header>
 
+
 <section class="Main_Page">
     <div class="row">
         <div class="card">
-            <h1><a class="link" href="mainPage.html" id="demo"></a></h1>
+            <div class="img0" id="demo"></div>
             <script>
                 var i = 0;
-                var txt = 'Clean energy  Clean Future';
-                var speed = 60;
+                var txt = 'Clean Energy  Clean Future';
+                var speed = 70;
                 typeWriter();
             </script>
-            <div class="img0"></div>
             <p><strong>Clean Energy - Clean Future</strong><br>
                 Most compellingly, a dramatic clean energy revolution is already under way,
                 ushering in the energy system of the future – one that is affordable, resilient,
@@ -121,7 +115,7 @@
                 <a class="hyperlink" href="solar.html">Read More</a>
             </div>
             <div class="card">
-                <h2><a class="link" href="">Wind Power</a></h2>
+                <h2><a class="link" href="wind.html">Wind Power</a></h2>
                 <div class="img4"></div>
                 <p>The wind is a clean, free, and readily available renewable energy source.
                     Each day, around the world, wind turbines are capturing the wind’s power and converting it to
@@ -129,58 +123,58 @@
                     Wind power generation plays an increasingly important role in the way we power our world – in a
                     clean, sustainable manner.
                 </p>
-                <a class="hyperlink" href="#">Read More</a>
+                <a class="hyperlink" href="wind.html">Read More</a>
             </div>
             <div class="card">
-                <h2><a class="link" href="">Hydroelectric Power</a></h2>
+                <h2><a class="link" href="hydroelectric.html">Hydroelectric Power</a></h2>
                 <div class="img5"></div>
                 <p> Decentralised Drinking Water Production Using Wind Energy Powered Electrodialysis.
                 </p>
-                <a class="hyperlink" href="#">Read More</a>
+                <a class="hyperlink" href="hydroelectric.html">Read More</a>
             </div>
             <div class="card">
-                <h2><a class="link" href="">Geothermal Energy</a></h2>
+                <h2><a class="link" href="geothermal.html">Geothermal Energy</a></h2>
                 <div class="img1"></div>
                 <p>Geothermal energy comes from deep inside the earth.
                     The slow decay of radioactive particles in the earth's core,
                     a process that happens in all rocks, produces geothermal energy.
                 </p>
-                <a class="hyperlink" href="#">Read More</a>
+                <a class="hyperlink" href="geothermal.html">Read More</a>
             </div>
             <div class="card">
-                <h2><a class="link" href="">Nuclear Power</a></h2>
+                <h2><a class="link" href="nuclear.html">Nuclear Power</a></h2>
                 <div class="img6"></div>
                 <p>Many environmentalists have opposed nuclear power, citing its dangers and the difficulty of disposing of its radioactive waste.
                     But a Pulitzer Prize-winning author argues that nuclear is safer than most energy sources
                     and is needed if the world hopes to radically decrease its carbon emissions.
                 </p>
-                <a class="hyperlink" href="#">Read More</a>
+                <a class="hyperlink" href="nuclear.html">Read More</a>
             </div>
             <div class="card">
-                <h2><a class="link" href="">BioEnergy</a></h2>
+                <h2><a class="link" href="bioenergy.html">BioEnergy</a></h2>
                 <div class="img7"></div>
                 <p> Bioenergy is one of many diverse resources available to help meet our demand for energy.
                     It is a form of renewable energy that is derived from recently living organic materials known as biomass,
                     which can be used to produce transportation fuels, heat, electricity, and products.
                 </p>
-                <a class="hyperlink" href="#">Read More</a>
+                <a class="hyperlink" href="bioenergy.html">Read More</a>
             </div>
             <div class="card">
-                <h2><a class="link" href="">Chemical Energy</a></h2>
+                <h2><a class="link" href="chemical.html">Chemical Energy</a></h2>
                 <div class="img8" ></div>
                 <p>
                     Chemical energy is energy stored in the bonds of chemical compounds, like atoms and molecules.
                     This energy is released when a chemical reaction takes place.
                     Usually, once chemical energy has been released from a substance,
                     that substance is transformed into a completely new substance.
-                 </p>
-                <a class="hyperlink" href="#">Read More</a>
+                </p>
+                <a class="hyperlink" href="chemical.html">Read More</a>
             </div>
         </div>
         <div class="rightColumn">
             <div class="card" id="joinCard">
                 <h2>Join Us</h2>
-                <button class="img3" onclick="window.location.href = 'Register.html';"></button>
+                <button class="img3" onclick="window.location.href='#register';"></button>
                 <p>Create an account to keep receiving all the new posts</p>
             </div>
             <div class="card" id="postCard">
@@ -221,25 +215,24 @@
 
 
 
-
 <footer class="site-footer">
     <div class="social-wrapper">
         <ul>
             <li>
                 <a href="#">
-                    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" alt="Twitter Logo" class="twitter-icon"></a>
+                    <img src="../menu-footer/footerImages/twitterLogo.webp" alt="Twitter Logo" class="twitter-icon"></a>
             </li>
             <li>
                 <a href="#" >
-                    <img src="https://www.mchenryvillage.com/images/instagram-icon.png" alt="Instagram Logo" class="instagram-icon"></a>
+                    <img src="../menu-footer/footerImages/instagramLogo.png" alt="Instagram Logo" class="instagram-icon"></a>
             </li>
             <li>
                 <a href="#">
-                    <img src="http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico" alt="Facebook Logo" class="facebook-icon"></a>
+                    <img src="../menu-footer/footerImages/fbLogo.ico" alt="Facebook Logo" class="facebook-icon"></a>
             </li>
             <li>
                 <a href="#" >
-                    <img src="https://lh3.googleusercontent.com/j_RwVcM9d47aBDW5DS1VkdxUYCkDUCB6wZglv4x-9SmsxO0VaFs7Csh-FmKRCWz9r_Ef=w170" alt="Youtube Logo" class="youtube-icon"></a>
+                    <img src="../menu-footer/footerImages/youtubeLogo.png" alt="Youtube Logo" class="youtube-icon"></a>
             </li>
         </ul>
     </div>
@@ -248,6 +241,5 @@
             <?php echo date("Y"); ?> Csd Team. All rights reserved.</p>
     </nav>
 </footer>
-
 </body>
 </html>

@@ -25,8 +25,17 @@ function typeWriter() {
     {
         i = 0;
         var j;
-        txt = 'Clean energy  Clean Future';
-        speed = 60;
-        setTimeout(CallTypeWriter,5000);
+        txt = 'Clean Energy  Clean Future';
+        speed = 70;
+        setTimeout(CallTypeWriter,9000);
     }
+}
+function PageScroll() {
+
+    setTimeout(sco,500);
+
+}
+function sco() {
+    window.scrollBy(0, -100); // Scroll 100px up
+
 }
