@@ -32,7 +32,7 @@ p{
     width: 25%;
     padding-left: 1.3em;
 }
-
+/*style of title links*/
 .link{
     text-decoration: none;
     color: black;
@@ -41,7 +41,7 @@ p{
     color: darkslategray;
     transition: .3s;
 }
-/*style of a href hyperlink*/
+/*style of a read more hyperlink*/
 .hyperlink {
     display: flex;
     justify-content: center;
@@ -157,7 +157,6 @@ p{
     padding: 10px;
     margin-top: 20px;
 }
-
 /* Clear floats after the columns - maybe not needed */
 .row:after {
     content: "";

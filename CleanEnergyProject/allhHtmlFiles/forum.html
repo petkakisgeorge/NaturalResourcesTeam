@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../menu-footer/navBar.css">
+    <link rel="stylesheet" href="../menu-footer/footer.css">
+    <link rel="stylesheet" href="../forum/forum.css">
+    <link rel="stylesheet" href="../mainPage/mainPage.css">
+
+    <title>Forum</title>
+
+    <script src="../menu-footer/navBar.js"></script>
+    <script src="../mainPage/mainSection.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<header>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+
+    <img class="logo-container" src="" alt="CleanEnergyCleanFuture">
+
+    <div class="search-container">
+        <div class="button-container">
+            <a id="button-label" onclick='return myFunction()'>
+                <i class="fa fa-search"></i>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="text-container">
+        <form action="#">
+            <label id="search-label">
+                <input id="txtInput" type="text" placeholder="Search..." name="search">
+            </label>
+        </form>
+    </div>
+
+
+    <nav id="main-nav">
+        <ul id="main-ul">
+            <li class="nav-item">
+                <a class="main-link-a" href="mainPage.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="main-link-a" href="technology.html">Technology<span class="arrow">&#x25BC;</span></a>
+                <ul class="submenu">
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub link 1</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub link 2</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="main-link-a" href="energy-economy.html">Energy &<br>Economy</a>
+            </li>
+            <li class="nav-item">
+                <a class="main-link-a" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="main-link-a" href="forum.html">Forum<span class="arrow">&#x25BC;</span></a>
+                <ul class="submenu">
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Log in</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Register</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section id="forumPage">
+    <div class="row" id="jumboTop">
+        <h1>Welcome to our Forum!</h1>
+        <p>Any questions?</p>
+        <div id="forum-buttons">
+            <button>New thread</button>
+            <button>Search thread</button>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div id="topicCard">
+            <h2>Posts</h2>
+        </div>
+    </div>
+
+
+    <div class="forumRow">
+        <div class="card">
+            <h3>Thread 1</h3>
+            <p>With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Go to Thread</a>
+        </div>
+        <div class="card" >
+            <h3>Thread 2</h3>
+            <p>With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Go to Thread</a>
+        </div>
+        <div class="card">
+            <h3>Thread 3</h3>
+            <p>With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Go to Thread</a>
+        </div>
+        <div class="card">
+            <h3>Thread 4</h3>
+            <p>With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Go to Thread</a>
+        </div>
+        <div class="card">
+            <h3>Thread 5</h3>
+            <p>With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Go to Thread</a>
+        </div>
+        <div class="card">
+            <h3>Thread 6</h3>
+            <p>With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Go to Thread</a>
+        </div>
+        <div class="card">
+            <h3>Thread 7</h3>
+            <p>With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Go to Thread</a>
+        </div>
+        <div class="card">
+            <h3>Thread 8</h3>
+            <p>With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Go to Thread</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <h1>Newsletter Or Something like this</h1>
+        <p><strong>End of the first page</strong><br>
+            Some text i guess.
+        </p>
+    </div>
+</section>
+
+
+
+
+<footer class="site-footer">
+    <div class="social-wrapper">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="../menu-footer/footerImages/twitterLogo.webp" alt="Twitter Logo" class="twitter-icon"></a>
+            </li>
+            <li>
+                <a href="#" >
+                    <img src="../menu-footer/footerImages/instagramLogo.png" alt="Instagram Logo" class="instagram-icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../menu-footer/footerImages/fbLogo.ico" alt="Facebook Logo" class="facebook-icon"></a>
+            </li>
+            <li>
+                <a href="#" >
+                    <img src="../menu-footer/footerImages/youtubeLogo.png" alt="Youtube Logo" class="youtube-icon"></a>
+            </li>
+        </ul>
+    </div>
+    <nav class="footer-nav" >
+        <p>Copyright &copy; 2020
+            <?php echo date("Y"); ?> Csd Team. All rights reserved.</p>
+    </nav>
+</footer>
+</body>
+</html>
