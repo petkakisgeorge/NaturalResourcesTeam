@@ -30,12 +30,3 @@ function typeWriter() {
         setTimeout(CallTypeWriter,9000);
     }
 }
-function PageScroll() {
-
-    setTimeout(sco,500);
-
-}
-function sco() {
-    window.scrollBy(0, -100); // Scroll 100px up
-
-}
