@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forum</title>
+
+    <link rel="stylesheet" type="text/css" href="../forum/forum.css">
+    <link rel="stylesheet" type="text/css" href="../menu-footer/navBar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../menu-footer/footer.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="../menu-footer/navBar.js"></script>
+    <script src="forumScript.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div class="container m-0 p-0" >
+<header style="display: grid">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+
+    <img class="logo-container" src="" alt="CleanEnergyCleanFuture">
+
+    <div class="search-container">
+        <div class="button-container">
+            <a id="button-label" onclick='return myFunction()'>
+                <i class="fa fa-search"></i>
+            </a>
+
+            <div class="text-container">
+                <form action="#">
+                    <label id="search-label">
+                        <input id="txtInput" type="text" placeholder="Search..." name="search">
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <nav id="main-nav">
+        <ul id="main-ul">
+            <li class="nav-item">
+                <a class="main-link-a" href="../allhHtmlFiles/mainPage.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="main-link-a" href="#">Technology<span class="arrow">&#x25BC;</span></a>
+                <ul class="submenu">
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub link 1</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub link 2</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub link 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="main-link-a" href="#">Energy &<br>Economy</a>
+            </li>
+            <li class="nav-item">
+                <a class="main-link-a" href="#">News<span class="arrow">&#x25BC;</span></a>
+                <ul class="submenu">
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub Link 1</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Sub Link 2</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item active">
+                <a class="main-link-a" href="#">Forum<span class="arrow">&#x25BC;</span></a>
+                <ul class="submenu">
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Log in</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a class="sub-link-a" href="#">Register</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+</div>
+
+
+
+<div class="jumbotron text-center bg " id="jumboTop">
+    <h1 class="display-4">Welcome to our Forum!</h1>
+    <p class="lead">Any questions?</p>
+    <p class="lead">
+        <a class="btn btn-outline-light btn-md mb-2 mx-4" href="#form1"  data-toggle="collapse"  role="button" aria-expanded="false" aria-controls="multiCollapseExample1">New Thread</a>
+        <a class="btn btn-outline-light btn-md mb-2 mx-4"  href="#form2" data-toggle="collapse"  role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Search Thread</a>
+
+    </p>
+    <div class="row pb-4 justify-content-center">
+        <div class="col-md-5 col-lg-4 col-xl-3">
+            <div class="collapse multi-collapse" id="form1">
+                <form>
+                    <div class="input-group mb-3  ">
+                        <input type="text" class="form-control" placeholder="Title:">
+                        <div class="input-group-append">
+                            <button class="btn btn-light" type="button">Post</button>
+                        </div>
+                    </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1" ></label>
+                                <textarea class="form-control" placeholder="Description:" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-5 col-lg-4 col-xl-3">
+            <div class="collapse multi-collapse" id="form2">
+                <form>
+                    <div class="input-group mb-3  ">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-light" type="button">Search</button>
+                        </div>
+                        <input type="text" class="form-control">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="container " id="forumThreads">
+    <div class="row">
+        <div class="col-sm-6 mb-4 thread">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Thread 1 </h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go to Thread</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-4 thread">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Thread 2</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go to Thread</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 mb-4 thread">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Thread 3</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go to Thread</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-4 thread">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Thread 4</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go to Thread</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-4 thread">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Thread 5</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go to Thread</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-4 thread">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Thread 6</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go to Thread</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-4 thread">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Thread 7</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go to Thread</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-4 thread">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Thread 8</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go to Thread</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<footer class="site-footer">
+    <div class="social-wrapper">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="../menu-footer/footerImages/twitterLogo.webp" alt="Twitter Logo" class="twitter-icon"></a>
+            </li>
+            <li>
+                <a href="#" >
+                    <img src="../menu-footer/footerImages/instagramLogo.png" alt="Instagram Logo" class="instagram-icon"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../menu-footer/footerImages/fbLogo.ico" alt="Facebook Logo" class="facebook-icon"></a>
+            </li>
+            <li>
+                <a href="#" >
+                    <img src="../menu-footer/footerImages/youtubeLogo.png" alt="Youtube Logo" class="youtube-icon"></a>
+            </li>
+        </ul>
+    </div>
+    <nav class="footer-nav" >
+        <p>Copyright &copy; 2020
+            <?php echo date("Y"); ?> Csd Team. All rights reserved.</p>
+    </nav>
+</footer>
+</body>
+</html>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
