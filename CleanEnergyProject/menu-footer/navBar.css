@@ -7,6 +7,17 @@ body{
     font-family: Arial, serif;
 }
 
+/*some default settings to avoid bootstrap's problems*/
+#main-nav  #main-ul .nav-item .main-link-a , .sub-link-a{
+    text-decoration: none;
+}
+#main-nav  #main-ul .nav-item .submenu .sub-link-a{
+    text-decoration: none;
+}
+#main-ul{
+    margin-bottom: 0;
+}
+
 
 header{
     display:grid;
@@ -70,7 +81,7 @@ header{
     color: black;
     font-size: 16px;
     font-weight: normal;
-    height: 2em;
+    height: 3em;
 
     display: flex;
     align-items: center;
