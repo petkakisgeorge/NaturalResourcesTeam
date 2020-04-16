@@ -1,8 +1,6 @@
-.row
-{
+.row {
     display: grid;
 }
-h1
-{
+h1 {
     margin-top: 5em;
 }

@@ -95,6 +95,11 @@ input:-moz-placeholder {
     color: darkgreen;
 }
 
+/*some space between log in block and footer*/
+#divSpace{
+    height: 40vh;
+}
+
 @media screen and (max-width: 1100px) {
     .RecoverBox{
         width: 55%;

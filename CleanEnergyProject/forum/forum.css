@@ -1,56 +1,27 @@
-#forumPage{
-    display: grid;
-    background: #f1f1f1;
+body > {
+    font-family: Arial, serif;
+    z-index: 1;
+
+}
+.site-footer{
+    z-index: 1;
+}
+header{
+    z-index: 9999;
+
 }
 #jumboTop {
-    padding-top: 100px ;
+    padding-top: 150px ;
+    padding-bottom: 0;
     background-color: darkslategray;
     color: white;
-}
-#forum-buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.forumRow{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    font-family: Arial, serif;
 
-    column-gap: 20px;
-    row-gap: 10px;
-    background-color: #f1f1f1;
-    width: 78%;
-    margin-right: auto;
-    margin-left: auto;
 }
-.forumRow h3{
-    text-align: center;
+#forumThreads .btn-primary{
+    background-color: darkslategray;
 }
-.forumRow a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1500px) {
-    .forumRow{
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .forumRow{
-        width:95%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-@media screen and (max-width: 990px) {
-    .row {
-        width: 100%;
-        margin-right: 0;
-        margin-left: 0;
-    }
+#forumThreads{
+    font-family: Arial, serif;
+    z-index: -1;
 }
