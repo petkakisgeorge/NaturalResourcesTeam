@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Energy & Economy</title>
-
+    <link rel="stylesheet" href="../news/news.css">
     <link rel="stylesheet" href="../menu-footer/navBar.css">
     <link rel="stylesheet" href="../menu-footer/footer.css">
     <link rel="stylesheet" href="../mainPage/mainPage.css">
-    <link rel="stylesheet" href="../natResPages/solar.css">
-    <link rel="stylesheet" href="../energy-economy/energy-economy.css">
-    <link rel="stylesheet" href="../technology/technology.css">
 
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+    <meta charset="UTF-8">
+    <title>News</title>
+
+    <script src="../news/news.js"></script>
     <script src="../menu-footer/navBar.js"></script>
     <script src="../mainPage/mainSection.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
 <header>
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
@@ -58,10 +55,10 @@
                 <a class="main-link-a" href="technology.html">Technology<span class="arrow">&#x25BC;</span></a>
                 <ul class="submenu">
                     <li class="sub-nav-item">
-                        <a class="sub-link-a" href="technology.html#tech1">Technology's Role</a>
+                        <a class="sub-link-a" href="#tech1" onclick="PageScroll()">Technology's Role</a>
                     </li>
                     <li class="sub-nav-item">
-                        <a class="sub-link-a" href="technology.html#tech2">Technological Innovations</a>
+                        <a class="sub-link-a" href="#tech2" onclick="PageScroll()">Technological Innovations</a>
                     </li>
                 </ul>
             </li>
@@ -86,51 +83,43 @@
     </nav>
 </header>
 
+
 <section class="Main_Page">
     <div class="row">
         <div class="card">
-            <h1 id="mainTitle"> <a class="mainLinkTitle" href="energy-economy.html">Energy & Economy</a> </h1>
-            <div class="enAndEcImg0"></div>
-            <p><strong>"The key to building the future"</strong></p>
+
+            <div id="newsBanner">
+                <h1 id="newsTitle">
+                    <a href="news.html"><i class="far fa-newspaper"></i>News</a>
+                </h1>
+                <p><strong>Get your daily news!</strong></p>
+            </div>
+
         </div>
     </div>
 
     <div class="row">
-        <div class="techCard">
-            <div class="techTitle">
-                <h2>Energy the key to economic growth</h2>
+        <div class="newsCard">
+            <div class="newsPost">
+                <h2  class="postTitle">News Post</h2>
             </div>
-            <div class="sampleImage"></div>
-            <p>Many information technology initiatives have emerged in recent years with the aim of improving natural resource management.<br>
-                These take a variety of technological forms designed either to directly curb corruption in resource extraction and production,<br>
+            <div class="sampleImage"><i class="far fa-image"></i></div>
+            <p>Many information technology initiatives have emerged in recent years with the aim of improving natural resource management.
+                These take a variety of technological  forms designed either to directly curb corruption in resource extraction and production,<br>
                 or to enhance information flows, facilitate citizen participation, and hold specific actors accountable.
                 Donors can play a role <br> in connecting the divide between development practitioners, technologists, and researchers by supporting the use of
                 tools in programs and evaluations.
             </p>
+
         </div>
     </div>
 
     <div class="row">
-        <div class="techCard">
-            <div class="techTitle">
-                <h2>Energy's impact to the economy</h2>
+        <div class="newsCard">
+            <div class="newsPost">
+                <h2>News Post</h2>
             </div>
-            <div class="sampleImage"></div>
-            <p>Many information technology initiatives have emerged in recent years with the aim of improving natural resource management.<br>
-                These take a variety of technological forms designed either to directly curb corruption in resource extraction and production,<br>
-                or to enhance information flows, facilitate citizen participation, and hold specific actors accountable.
-                Donors can play a role <br> in connecting the divide between development practitioners, technologists, and researchers by supporting the use of
-                tools in programs and evaluations.
-            </p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="techCard">
-            <div class="techTitle">
-                <h2>Current state of the energy economy</h2>
-            </div>
-            <div class="sampleImage"></div>
+            <div class="sampleImage"><i class="far fa-image" ></i></div>
             <p>Many information technology initiatives have emerged in recent years with the aim of improving natural resource management.<br>
                 These take a variety of technological forms designed either to directly curb corruption in resource extraction and production,<br>
                 or to enhance information flows, facilitate citizen participation, and hold specific actors accountable.
@@ -143,18 +132,18 @@
 
 
     <div class="row" id="bottomRow">
-        <div class="card" id="joinCard_economy">
+        <div class="card" id="joinCard_tech">
             <h2>Join Us</h2>
             <button class="img3" onclick="window.location.href='Login.html';"></button>
             <p>Create an account to keep receiving all the new posts</p>
         </div>
-        <div class="card" id="postCard_economy">
+        <div class="card" id="postCard_tech">
             <h3>Popular Post</h3>
             <div class="other_img"><p>Image</p></div>
             <div class="other_img"><p>Image</p></div>
             <div class="other_img"><p>Image</p></div>
         </div>
-        <div class="card" id="newsCard_economy">
+        <div class="card" id="newsCard_tech">
             <h3>Top News</h3>
             <p>Previews of some news.. <br> </p>
         </div>
@@ -175,6 +164,9 @@
         window.onscroll = function() {scrollFunction()};
     </script>
 </section>
+
+
+
 
 <footer class="site-footer">
     <div class="social-wrapper">
@@ -202,6 +194,7 @@
             <?php echo date("Y"); ?> Csd Auth Team. All rights reserved.</p>
     </nav>
 </footer>
+
 
 </body>
 </html>
