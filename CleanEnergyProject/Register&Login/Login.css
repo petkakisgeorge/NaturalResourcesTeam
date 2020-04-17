@@ -96,7 +96,7 @@ input:-moz-placeholder {
 
 /*some space between log in block and footer*/
 #divSpace{
-    height: 40vh;
+    height: 30vh;
 }
 @media screen and (max-width: 1100px) {
     .LoginBox{

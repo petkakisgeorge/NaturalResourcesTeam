@@ -157,6 +157,7 @@ p{
     background-color: white;
     padding: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 /*configure the topic of the page*/
 #topicCard{
@@ -198,7 +199,6 @@ html {
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
 }
-
 /* Responsive layout*/
 @media screen and (max-width: 1500px) {
     .row{
