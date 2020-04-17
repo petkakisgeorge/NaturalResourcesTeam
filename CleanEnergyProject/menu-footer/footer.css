@@ -11,6 +11,9 @@
 .social-wrapper {
     text-align: center;
 }
+.social-wrapper ul{
+    margin-bottom: 0;
+}
 .social-wrapper ul li {
     display: inline;
     margin: 0 5px;
