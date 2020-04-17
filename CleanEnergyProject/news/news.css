@@ -7,10 +7,10 @@
     background-size: 100% 100%;
     height: 300px;
 }
-  div #newsTitle a{
+div #newsTitle a{
     color: white;
-      font-size: 4em;
-      text-decoration: none;
+    font-size: 3em;
+    text-decoration: none;
 }
 .sampleImage{
     background-color:grey;
