@@ -46,12 +46,15 @@
     background-color: white;
     padding: 20px;
     margin-top: 10px;
+    border: 0.2em solid rgba(47,79,79,0.7);
 }
 /*configure the "see more" card*/
 .seeMoreCard {
     background-color: white;
     padding: 10px;
     margin-top: 20px;
+    border-bottom: 0.2em solid rgba(47,79,79,0.7);
+    border-top: 0.2em solid rgba(47,79,79,0.7);
 }
 /*configure the bottom row of the page*/
 #bottomRow{
