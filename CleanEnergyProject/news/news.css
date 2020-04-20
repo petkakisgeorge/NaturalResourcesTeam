@@ -48,6 +48,10 @@ div #newsTitle a{
     column-gap: 20px;
 }
 
+#newsCard_news, #joinCard_news, #postCard_news{
+    border: 0.1em solid rgba(47,79,79,0.7);
+}
+
 @media screen and (max-width: 990px) {
     #bottomRow{
         display: grid;
@@ -55,7 +59,7 @@ div #newsTitle a{
         grid-template-rows: auto auto;
         column-gap: 20px;
     }
-    #newsCard_tech{
+    #newsCard_news{
         margin-top: 0;
         grid-row: 2;
         grid-column: 1/3;

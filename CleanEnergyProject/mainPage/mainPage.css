@@ -243,6 +243,7 @@ html {
         order: 2;
     }
     #newsCard{
+        margin-top: 0;
         width: 100%;
         order:3;
         grid-row: 2;
