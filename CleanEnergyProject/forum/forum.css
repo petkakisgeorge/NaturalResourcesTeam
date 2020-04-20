@@ -1,0 +1,27 @@
+body > {
+    font-family: Arial, serif;
+    z-index: 1;
+
+}
+.site-footer{
+    z-index: 1;
+}
+header{
+    z-index: 9999;
+
+}
+#jumboTop {
+    padding-top: 150px ;
+    padding-bottom: 0;
+    background-color: darkslategray;
+    color: white;
+    font-family: Arial, serif;
+
+}
+#forumThreads .btn-primary{
+    background-color: darkslategray;
+}
+#forumThreads{
+    font-family: Arial, serif;
+    z-index: -1;
+}

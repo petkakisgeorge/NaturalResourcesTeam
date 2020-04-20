@@ -1,381 +1,56 @@
-.Main_Page
-{
-    display: grid;
-    
-}
-h1{
-    margin-top: 3em;
-    text-align: center;
-    
-}
-
-a{
-    color: black;
-}
-
-
-p{
-    font-style: italic;
-    text-align: center;
-}
-
-#register{
-    font-style: italic;
-    text-align: center;
-}
-
-
-.mainContent{
-    background-color:white;
-    background-size: cover;
-    margin-left:5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    
-   
-    display: grid; 
-    grid-template-columns: 20% auto;
-    grid-template-rows:30% 70% 70%;
-    grid-template-areas:
-    "mainContenTitle mainContentTitle"
-    "imgContainer mainText" ;
-}
-
-.mainContentTitle{
-    grid-area: mainContentTitle;
-    margin-top: 1%;
-    text-align: center;
-    margin-right: 25%;
-    text-decoration: underline;
-}
-
-.mainText{
-    grid-area: mainText;
-    text-align: right;
-    text-align: justify;
-    margin-left: 5%;
-    padding-right: 2%;
-    font-size: 140%;
-}
-
-.bottomContent{
-    
-    display: grid; 
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows:100%;
-    grid-template-areas:
-    "registerCard card popularPostCard newsCard" ;
-
-    background-color: white;
-    margin-left:3%;
-    margin-right: 5.9%;
-    margin-top: 5%;
-    padding-bottom: -5%;
-
-}
-
-
-.card {
-    grid-area:card;
-    background-color: #aaa;
-    padding: 20px;
-
-    margin-top: 20px;
-    margin-right: 5%;
-    margin-left: -170%;
-   
-}
-
-.registerCard {
-    grid-area:registerCard;
-    background-color: #aaa;
-    padding: 20px;
-    
-    margin-top: 20px;
-    margin-right: -10%;
-    margin-left: 20%;
-    width:50%;
-    
-}
-
-.popularPostCard{
-    grid-area:popularPostCard;
-    background-color: #aaa;
-    padding: 20px;
-    margin-top: 20px;
-    margin-right: 5%;
-    margin-left: 5%;
-}
-
-.newTechCard{
-    grid-area:newsCard;
-    background-color: #aaa;
-    padding: 20px;
-    margin-top: 20px;
-    margin-right: 20%;
-    margin-left: 5%;
-}
-
-.newsLetter{
-    margin-bottom: 2%;
-    
-    font-size: large;
-}
-
-/*from here we change the color of the spaces left in row*/
-.row{
-    padding-top: 7em;
-    padding-bottom: 5em;
-    font-size: large;
-}
-
-.imageTitle{
-    background-image: url('image/energy-1989341_1920-compressor.jpg');
-    background-position: center;
-    background-repeat: no-repeat, no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-size: 100%;
-    
-}
-
-.mainSection{
-    background-color: #f1f1f1;
-
-}
-.imgContainer{
-    grid-area: imgContainer;
-    width: 80%;
-    height:100%;
-    margin-left: 20%;
-    margin-bottom: 70%;
-    border: 2px solid black;
-    
-    background-image: url('image/solar-cell-4045029_1920.jpg');
-    background-size: 100% 120%;
-    background-repeat: repeat-x;
-}
-
-.border{
-    margin-top: 10%;
-    background-color: white;
-    border: hidden;
-    border-bottom: 1px solid black;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.previousAndNextButtons{
-     
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-right: 2%;
-    margin-top: 5%;
-   
-
-}
-#next{
-   
-   
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
-
-}
-
-#next:hover{
-    text-decoration: underline;
-}
-
-#previous{
-    
-  
-    text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-  margin-right: 1%;
-}
-
-#previous:hover{
-    text-decoration: underline;
-   
-}
-
-/*Others Images*/
-.other_img{
+/*Banner image*/
+.techImg0{
     background-color: #aaa;
     width: 100%;
-    padding: 20px;
+    padding: 1.3em;
+    background-image: url("../mainPage/images/solar.jpg");
+    background-size: 100% 100%;
+    height: 300px;
 }
-
-/* Register image */
-.img3 {
+.sampleImage{
     background-color: #aaa;
     width: 100%;
-    height: 70%;
-
-    padding: 20px;
-    background-image: url("image/registerLogo.jpg");
-    background-size: 100% 150%;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-    float: left;
-    width: 10%;
-    
-}
-/* Right column */
-.rightcolumn {
-    float: left;
-    width: 25%;
-    padding-left: 53px;
-}
-/*style of a href hyperlink*/
-.hyperlink
-{
-    display: flex;
-    justify-content: center;
-    color: #555555;
-}
-
-/* Add a card effect for articles */
-
-
-/* Clear floats after the columns - maybe not needed */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-/*This is for smoother scrolling up*/
-html {
-    scroll-behavior: smooth;
-}
-/*Scroll to the top button configuration*/
-#myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: forestgreen; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-}
-/*Button Color when focus*/
-#myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-    .mainContent{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    
-    .mainContentTitle{
-        grid-area: mainContentTitle;
-        margin-top: 1%;
-        margin-bottom: 2%;
-        text-align: center;
-        margin-left: 24% ;
-        text-decoration: underline;
-    }
-    .imgContainer{
-        grid-area: imgContainer;
-        width: 200px;
-        height: 270px;
-        padding-right: 80%;
-        margin-right: 20%;
-        border: 2px solid black;
-        background-image: url('image/solar-cell-4045029_1920.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    .mainText{
-        grid-area: mainText;
-        text-align: right;
-        text-align: justify;
-        margin-left: 5%;
-        padding-right: 2%;
-        font-size: 130%;
-        margin-top: -60%;
-    }
-    
-.bottomContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-        
-}
-
-    
-.card {
-    background-color: #aaa;
-    padding: 20px;
-    margin-top: 20px;
-    width: 80%;
-    margin-left: 8%;
-}
-
-.registerCard {
-  
-    background-color: #aaa;
-    margin-top: 20px;
-    width: 50%;
-    height: 80%;
-    margin-right: 20%;
-}
-
-.popularPostCard{
-    
-    background-color: #aaa;
-    margin-top: 20px;
-    width: 80%;
-    margin-left: 7%;
-}
-
-.newTechCard{
-   
-    background-color: #aaa;
-    margin-top: 20px;
-    width:50%;
-    margin-left:23%;
-}
-
-/* Register image */
-.img3 {
-    background-color: #aaa;
-   
+    padding: 1.3em;
+    background-image: url("../mainPage/images/solar.jpg");
+    background-size: 100% 100%;
     height: 200px;
-    padding: 20px;
-    background-image: url("image/registerLogo.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-   
-    
 }
-#register{
-    font-style: italic;
-    text-align: left;
-    margin-top: 5%;
+/*create a card*/
+.techCard{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    row-gap: 10px;
+
+
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+/*configure the title of the card*/
+.techTitle{
+    grid-row: 1;
+    grid-column: 1/4;
+}
+/*configure the bottom row of the page*/
+#bottomRow{
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
 }
 
+@media screen and (max-width: 990px) {
+    #bottomRow{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 20px;
+    }
+    #newsCard_tech{
+        grid-row: 2;
+        grid-column: 1/3;
+    }
 
 }

@@ -7,11 +7,22 @@ body{
     font-family: Arial, serif;
 }
 
+/*some default settings to avoid bootstrap's problems*/
+#main-nav  #main-ul .nav-item .main-link-a , .sub-link-a{
+    text-decoration: none;
+}
+#main-nav  #main-ul .nav-item .submenu .sub-link-a{
+    text-decoration: none;
+}
+#main-ul{
+    margin-bottom: 0;
+}
+
 
 header{
     display:grid;
-    grid-template-columns: 1fr auto auto;
-    grid-template-rows: 4em;
+    grid-template-columns: 1fr auto 4em;
+    grid-template-rows: 4em ;
     font-size: 20px;
     position:fixed;
     width:100%;
@@ -25,9 +36,10 @@ header{
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: #95999c;
+    background: darkslategray;
     width:15em;
 }
+
 
 /*configuration of nav container*/
 #main-nav {
@@ -69,7 +81,7 @@ header{
     color: black;
     font-size: 16px;
     font-weight: normal;
-    height: 2em;
+    height: 3em;
 
     display: flex;
     align-items: center;
@@ -129,28 +141,7 @@ header{
     transition: .4s;
 }
 
-/*search button configuration
-.searchbtn {
-    display: flex;
-    order:1;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    height: 100%;
-
-    background: white;
-
-    color: darkslategray;
-    cursor: pointer;
-}
-#check2{
-    display: none;
-}
-.searchbtn:hover  {
-    opacity:0.8;
-    background:lightgrey;
-}*/
-
+/*search container configuration*/
 .search-container{
     display: flex;
     position: relative;
@@ -175,42 +166,43 @@ header{
 }
 
 .text-container {
+    grid-row: 2;
+    grid-column: 1/4;
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgba(242,242,242,1);
 }
-
 #search-label{
     display: none;
     position: relative;
-    padding:0.4em 0.4em;
+    height: 2.6em;
+    padding: 0.4em 0.4em;
+    width: 60vw;
+    justify-content: center;
 }
 
 #txtInput{
-    font-size: 14px;
+    font-size: 16px;
     color: black;
     padding-left: 0.7em;
+    height: 100%;
+    width: 100%;
 
-    border: 2px solid darkslategray;
+    border: 3px solid darkslategray;
     border-radius: 12px;
-    height: 2.5em;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-decoration: none;
-    transition: background 0.4s;
 }
 
 
 
-
-
-/**/
+/*arrow indicator for side menu bar links*/
 .arrow {
     display: none;
 }
+
 
 
 /*Mobile Mode*/
@@ -223,8 +215,11 @@ header{
     .checkbtn{
         display: flex;
     }
-    .searchbtn{
-
+    #search-label{
+        width: 70vw;
+    }
+    .text-container{
+        z-index: 99;
     }
     #check:checked ~ #main-nav{
         display:flex;
@@ -332,10 +327,13 @@ header{
     }
     /*configuration of nav container*/
     #main-ul {
-        width:100vw;
+        width:60vw;
     }
     /*Configuration of nav-item's list*/
     .nav-item{
-        width:100vw;
+        width:60vw;
+    }
+    #search-label{
+        width: 95vw;
     }
 }
