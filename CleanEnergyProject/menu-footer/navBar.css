@@ -39,8 +39,6 @@ header{
     background: darkslategray;
     width:15em;
 }
-
-
 /*configuration of nav container*/
 #main-nav {
     display: flex;
@@ -243,9 +241,9 @@ header{
     /*configuration of logo container*/
     .logo-container{
         display: flex;
-        width:80%;
         margin-right:auto;
         margin-left:auto;
+        width: 100%;
     }
 
     /*configuration of nav container*/
