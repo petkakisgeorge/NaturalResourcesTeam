@@ -36,8 +36,10 @@ header{
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: darkslategray;
     width:15em;
+    background-image: url("../mainPage/images/logoCleanEnergyWhite.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 /*configuration of nav container*/
 #main-nav {
@@ -243,7 +245,7 @@ header{
         display: flex;
         margin-right:auto;
         margin-left:auto;
-        width: 100%;
+        width: 75%;
     }
 
     /*configuration of nav container*/
