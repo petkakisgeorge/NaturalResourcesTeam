@@ -40,10 +40,7 @@ header{
     background-image: url("../mainPage/images/logoCleanEnergyWhiteNoBorder.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-}
-#logoTag{
-    margin:0;
-    width: 15em;
+    cursor: pointer;
 }
 /*configuration of nav container*/
 #main-nav {
