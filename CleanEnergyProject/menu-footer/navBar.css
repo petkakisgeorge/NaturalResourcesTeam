@@ -37,7 +37,7 @@ header{
     align-items: center;
     height: 100%;
     width:15em;
-    background-image: url("../mainPage/images/logoCleanEnergyWhite.jpg");
+    background-image: url("../mainPage/images/logoCleanEnergyWhiteNoBorder.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -245,7 +245,7 @@ header{
         display: flex;
         margin-right:auto;
         margin-left:auto;
-        width: 75%;
+        width: 15em;
     }
 
     /*configuration of nav container*/
@@ -323,7 +323,7 @@ header{
 }
 @media screen and (max-width: 700px){
     .logo-container{
-        width: 100%;
+        width: 15em;
     }
     /*configuration of nav container*/
     #main-ul {
