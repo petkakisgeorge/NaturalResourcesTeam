@@ -18,6 +18,7 @@ p{
     width: 78%;
     margin-right: auto;
     margin-left: auto;
+    max-width: 1500px;
 }
 
 /* Create two unequal columns that floats next to each other */
