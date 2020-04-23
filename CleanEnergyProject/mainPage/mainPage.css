@@ -36,6 +36,8 @@ p{
 .link{
     text-decoration: none;
     color: black;
+    grid-row: 1;
+    grid-column: 1/3;
 }
 .link:hover{
     color: darkslategray;
@@ -45,16 +47,24 @@ p{
 .hyperlink {
     display: flex;
     justify-content: center;
-    color: #555555;
+    color: black;
     font-weight: bold;
+    grid-row: 3;
+    grid-column: 1/2;
+    margin-top: 10px;
+}
+.energy_description_paragraph{
+    grid-row: 2;
+    grid-column: 1/2;
+    background:rgba(47,79,79,0.8);
+    color: white;
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    padding: 10px;
 }
 
-/*Banner image
-text-shadow: 0 -1px 4px #FFFFFF, 0 -2px 10px #FFFFFF, 0 -10px 20px #FFFFFF, 0 -18px 40px #FFFFFF;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    #294018
-    text-decoration: rgb(68, 68, 68);
-*/
 .img0 {
     text-align: center;
     font-size: 48px;
@@ -73,6 +83,8 @@ text-shadow: 0 -1px 4px #FFFFFF, 0 -2px 10px #FFFFFF, 0 -10px 20px #FFFFFF, 0 -1
     background-image: url("images/geo.jpg");
     background-size: 150% 150%;
     height: 300px;
+    grid-row: 2;
+    grid-column: 2/3;
 }
 /* Solar image */
 .img2 {
@@ -82,6 +94,8 @@ text-shadow: 0 -1px 4px #FFFFFF, 0 -2px 10px #FFFFFF, 0 -10px 20px #FFFFFF, 0 -1
     background-image: url("images/solar.jpg");
     background-size: 100% 100%;
     height: 300px;
+    grid-row: 2;
+    grid-column: 2/3;
 }
 /* Wind image */
 .img4 {
@@ -91,6 +105,8 @@ text-shadow: 0 -1px 4px #FFFFFF, 0 -2px 10px #FFFFFF, 0 -10px 20px #FFFFFF, 0 -1
     background-image: url("images/wind.jpg");
     background-size: 100% 100%;
     height: 300px;
+    grid-row: 2;
+    grid-column: 2/3;
 }
 /* Water image */
 .img5 {
@@ -100,6 +116,8 @@ text-shadow: 0 -1px 4px #FFFFFF, 0 -2px 10px #FFFFFF, 0 -10px 20px #FFFFFF, 0 -1
     background-image: url("images/hydro.jpg");
     background-size: 100% 100%;
     height: 300px;
+    grid-row: 2;
+    grid-column: 2/3;
 }
 /* Nuclear image */
 .img6{
@@ -109,24 +127,19 @@ text-shadow: 0 -1px 4px #FFFFFF, 0 -2px 10px #FFFFFF, 0 -10px 20px #FFFFFF, 0 -1
     background-image: url("images/nuclear.jpg");
     background-size: 100% 100%;
     height: 300px;
+    grid-row: 2;
+    grid-column: 2/3;
 }
 /* BioEnergy image */
 .img7{
     background-color: #aaa;
     width: 100%;
     padding: 1.3em;
-    background-image: url("images/bioenergy.jpg");
+    background-image: url("images/bioenergy2.jpg");
     background-size: 100% 100%;
     height: 300px;
-}
-/* Chemical image */
-.img8{
-    background-color: #aaa;
-    width: 100%;
-    padding: 1.3em;
-    background-image: url("images/fuel.jpg");
-    background-size: 100% 100%;
-    height: 300px;
+    grid-row: 2;
+    grid-column: 2/3;
 }
 /* Register image */
 .img3 {
@@ -156,6 +169,20 @@ text-shadow: 0 -1px 4px #FFFFFF, 0 -2px 10px #FFFFFF, 0 -10px 20px #FFFFFF, 0 -1
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.main_card{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /*configure the topic of the page*/
 #topicCard{
     background: white;
@@ -254,6 +281,25 @@ html {
     .img0{
         padding: 0.75em;
         height: 200px;
+    }
+    .main_card{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        row-gap: 10px;
+    }
+    .link{
+        grid-row: 1;
+        grid-column: 1/2;
+    }
+    .img1, .img2, .img4, .img5 , .img6, .img7{
+        grid-row: 2;
+        grid-column: 1/2;
+    }
+    .energy_description_paragraph{
+        height: 100%;
+        grid-row: 3;
+        grid-column: 1/2;
     }
 }
 

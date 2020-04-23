@@ -13,7 +13,7 @@
     margin-left: auto;
     display: grid;
 }
-/* Settings about the logo images in login page*/
+/* Settings about the logo register_images in login page*/
 .avatar{
     width: 100px;
     height: 100px;
@@ -21,7 +21,7 @@
     margin-top: -2em;
     display: flex;
     justify-self: center;
-    background-image: url("images/avatar.png");
+    background-image: url("register_images/avatar.png");
     background-size: 100% 95%;
 }
 /* "Login Now" header */
