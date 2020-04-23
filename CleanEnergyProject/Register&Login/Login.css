@@ -7,7 +7,7 @@
     margin-top: 8em;
     width: 45%;
     height: 500px;
-    background: #000;
+    background: darkslategray;
     color: #fff;
     margin-right: auto;
     margin-left: auto;
@@ -69,7 +69,7 @@ input:-moz-placeholder {
     border: none;
     outline: none;
     height: 40px;
-    background: forestgreen;
+    background: #838383;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
