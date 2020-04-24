@@ -59,7 +59,7 @@ input:-moz-placeholder {
     margin-top: 6em;
     width: 45%;
     height: 600px;
-    background: #000;
+    background: darkslategray;
     color: #fff;
     margin-right: auto;
     margin-left: auto;
@@ -97,7 +97,7 @@ input:-moz-placeholder {
     border: none;
     outline: none;
     height: 40px;
-    background: forestgreen;
+    background: #0d2e2a;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
@@ -106,12 +106,12 @@ input:-moz-placeholder {
 .RegisterBox input[type="submit"]:hover
 {
     cursor: pointer;
-    background: grey;
+    background: darkgray;
     color: #000;
 }
 /* Style of a1  ("Terms&Privacy") */
 .RegisterBox #a1{
-    color: darkgreen;
+    color: #0a2e11
 }
 /* Style of a2  ("Already have an account?")*/
 .RegisterBox #a2{
@@ -123,7 +123,7 @@ input:-moz-placeholder {
 }
 .RegisterBox #a2:hover
 {
-    color: darkgreen;
+    color: black;
 }
 
 

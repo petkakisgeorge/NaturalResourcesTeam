@@ -17,6 +17,7 @@
 
     <script src="../menu-footer/navBar.js"></script>
     <script src="../mainPage/mainSection.js"></script>
+    <script src="../energy-economy/energy-economy.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
@@ -61,10 +62,10 @@
                 <a class="main-link-a" href="energy-economy.html">Energy &<br>Economy<span class="arrow">&#x25BC;</span></a>
                 <ul class="submenu">
                     <li class="sub-nav-item">
-                        <a class="sub-link-a" href="energy-economy.html">Energy 1</a>
+                        <a class="sub-link-a" href="#Energy1" onclick="PageScroll()">Energy 1</a>
                     </li>
                     <li class="sub-nav-item">
-                        <a class="sub-link-a" href="energy-economy.html">Energy 2</a>
+                        <a class="sub-link-a" href="#Energy2" onclick="PageScroll()">Energy 2</a>
                     </li>
                 </ul>
             </li>
@@ -98,7 +99,7 @@
     <div class="row">
         <div class="ecoCard" id="first-card">
             <div class="techTitle">
-                <h2>Clean Energy Economy</h2>
+                <h2 id="Energy1">Clean Energy Economy</h2>
             </div>
             <div id="clean-en-economy-img"></div>
             <p>
@@ -120,7 +121,7 @@
     <div class="row">
         <div class="ecoCard" id="eurostatCard">
             <div class="techTitle">
-                <h2>Clean Energy Consumption in EU</h2>
+                <h2 id="Energy2">Clean Energy Consumption in EU</h2>
             </div>
             <ul id="eurostat-ul">
                 <li >
@@ -167,7 +168,7 @@
     <div class="row" id="bottomRow">
         <div class="card" id="joinCard_economy">
             <h2>Join Us</h2>
-            <button class="img3" onclick="window.location.href='Login.html';"></button>
+            <button class="img3" onclick="window.location.href='Register.html';"></button>
         </div>
         <div class="card" id="postCard_economy">
             <h3>Popular Post</h3>

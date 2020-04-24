@@ -35,7 +35,7 @@ input:-moz-placeholder {
     margin-top: 6em;
     width: 45%;
     height: 400px;
-    background: #000;
+    background: darkslategray;
     color: #fff;
     margin-right: auto;
     margin-left: auto;
@@ -73,7 +73,7 @@ input:-moz-placeholder {
     border: none;
     outline: none;
     height: 40px;
-    background: forestgreen;
+    background: #0d2e2a;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
@@ -82,7 +82,7 @@ input:-moz-placeholder {
 .RecoverBox input[type="submit"]:hover
 {
     cursor: pointer;
-    background: grey;
+    background: darkgray;
     color: #000;
 }
 /* Style of a. ex: Already have an account? ..etc*/
@@ -92,7 +92,7 @@ input:-moz-placeholder {
 }
 .RecoverBox a:hover
 {
-    color: darkgreen;
+    color: black;
 }
 
 /*some space between log in block and footer*/

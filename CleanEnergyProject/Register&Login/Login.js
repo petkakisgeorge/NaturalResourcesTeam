@@ -4,7 +4,7 @@ window.onload = function runHide() {
     setTimeout(hide,600);
 }
 function hide() {
-    document.getElementsByTagName('h2')[0].style.color = 'black';
+    document.getElementsByTagName('h2')[0].style.color = 'darkslategray';
     setTimeout(show,300);
 }
 function show() {

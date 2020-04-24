@@ -69,7 +69,7 @@ input:-moz-placeholder {
     border: none;
     outline: none;
     height: 40px;
-    background: #838383;
+    background: #0d2e2a;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
@@ -78,7 +78,7 @@ input:-moz-placeholder {
 .LoginBox input[type="submit"]:hover
 {
     cursor: pointer;
-    background: grey;
+    background: darkgray;
     color: #000;
 }
 /* Style of a. ex: Lost your password? ..etc*/
@@ -91,7 +91,7 @@ input:-moz-placeholder {
 }
 .LoginBox a:hover
 {
-    color: darkgreen;
+    color: black;
 }
 
 /*some space between log in block and footer*/
