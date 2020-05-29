@@ -1,9 +1,12 @@
-function myFunction() {
+function openSearchBar() {
     var x = document.getElementById("search-label");
     if (x.style.display === "") {
         x.style.display = "flex";
+        x.style.justifyContent='center';
+        changeSearchIcon();
     } else {
         x.style.display = "";
+        changeCloseToggle();
     }
 }
 /* Always when changing a page ,it is scrolling up - useful for visiting a page's section.
@@ -26,3 +29,25 @@ function sco() {
 function PageScroll() {
     setTimeout(sco,500);
 }
+
+
+
+function changeSearchIcon() {
+    var search= document.getElementById('button-label');
+    search.style.display='none';
+
+    document.getElementById('close-toggle').style.display='flex';
+    document.getElementById('close-toggle').style.justifyContent='center';
+    document.getElementById('close-toggle').style.alignItems='center';
+}
+
+
+function changeCloseToggle() {
+    var toggle= document.getElementById('close-toggle');
+    toggle.style.display='none';
+
+    document.getElementById('button-label').style.display='flex';
+    document.getElementById('button-label').style.justifyContent='center';
+    document.getElementById('button-label').style.alignItems='center';
+}
+

@@ -1,0 +1,226 @@
+body{
+    background: #f1f1f1;
+    border: none;
+}
+
+/* Top bar container*/
+#nav-bar{
+    display: grid;
+    grid-template-columns: 4em auto 4em;
+    grid-template-rows: auto;
+    box-shadow: 0 4px 10px #888888;
+    margin: 0;
+    padding: 0;
+}
+
+/* logo*/
+#logo-container{
+    grid-column: 2/3;
+    grid-row: 1;
+
+    height: 4em;
+    width:15em;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url("../mainPage/images/logoCleanEnergyWhiteNoBorder.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+/*Toggle button*/
+#menu-toggle{
+    grid-column: 1/2;
+    grid-row: 1;
+
+    height: 100%;
+    font-size: 25px;
+    color: darkslategray;
+    border: none;
+}
+#menu-toggle:hover{
+    opacity:0.8;
+    background-color: lightgray;
+    transition: 0.4s;
+}
+
+
+/*search button*/
+.search-btn{
+    grid-row: 1;
+    grid-column: 3/4;
+
+    height: 100%;
+    font-size: 25px;
+    color: darkslategray;
+    background-color: white;
+    border: none;
+}
+.search-btn:hover {
+    opacity:0.8;
+    background:lightgrey;
+    transition: 0.4s;
+}
+
+/*search text input*/
+#search-label{
+    display: none;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1/4;
+    grid-row: 2;
+}
+#search-input{
+    border:1px solid darkslategray;
+}
+#search-submit-btn{
+    background-color: darkslategray;
+    color: white;
+}
+
+/*close toggle*/
+#close-toggle{
+    display: none;
+    grid-row: 1;
+    grid-column: 3/4;
+
+    height: 100%;
+    font-size: 25px;
+    color: darkslategray;
+    background-color: white;
+    border: none;
+}
+#close-toggle:hover{
+    opacity:0.8;
+    background:lightgrey;
+    transition: 0.4s;
+}
+
+/*user-log-in-button*/
+#user-log-in-button{
+    height: 100%;
+    font-size: 20px;
+    color: darkslategray;
+    background-color: white;
+}
+
+/*drop down navbar */
+#navbarMenu{
+    margin-top: 24px;
+    width: 15em;
+    grid-row: 2;
+}
+/*nav ul*/
+#nav-bar-ul{
+    border: none;
+}
+/*nav ul -> li*/
+#nav-bar-ul li{
+
+}
+/* nav ul -> li -> a */
+#nav-bar-ul .nav-link{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+#nav-bar-ul a{
+    margin-left: 16px;
+}
+
+#nav-bar-ul a:hover  {
+    color: darkslategray;
+    transition: 0.4s;
+}
+/*drop down menu*/
+.dropdown-menu{
+    border: none;
+}
+/*drop down menu -> a */
+.dropdown-item{
+}
+
+
+/*Desktop Mode*/
+@media screen and (min-width: 992px) {
+    /* Top bar container*/
+    #nav-bar{
+        display: grid;
+        grid-template-columns: 15em 1fr 4em;
+        grid-template-rows: 4em;
+    }
+
+    /* logo*/
+    #logo-container{
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+
+    /*search button*/
+    .search-btn{
+        grid-row: 1;
+        grid-column: 3/4;
+    }
+
+    /*search text input*/
+    #search-label{
+        display: none;
+        width: 50vw;
+        grid-row: 2;
+
+    }
+
+    /*user-log-in-button*/
+    #user-log-in-button{
+        font-size: 25px;
+    }
+
+    /*drop down navbar */
+    #navbarMenu{
+        width: auto;
+        margin-top: 0;
+        grid-column: 2/3;
+        grid-row: 1;
+        justify-content: right;
+    }
+    /*nav ul*/
+    #nav-bar-ul{
+        border: none;
+    }
+    /*nav ul -> li*/
+    #nav-bar-ul li{
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+    }
+
+    /* nav ul -> li -> a */
+    #nav-bar-ul .nav-link{
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    }
+    #nav-bar-ul a{
+        margin-left: 0;
+    }
+
+    #nav-bar-ul a:hover  {
+        color: darkslategray;
+        transition: 0.4s;
+    }
+    /*drop down menu*/
+    .dropdown-menu{
+        border: none;
+    }
+    /*drop down menu -> a */
+    .dropdown-item{
+
+    }
+}
+
+
+
+
+
+
