@@ -1,5 +1,6 @@
-*{
-
+header{
+    width: 100%;
+    position: fixed;
 }
 .Main_Page{
     display: grid;
